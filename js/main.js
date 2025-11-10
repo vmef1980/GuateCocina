@@ -1,4 +1,4 @@
-import { productos } from "./productos.js";
+import { productos } from "../js/productos.js";
 
 const menu = document.querySelector("#menu-categorias");
 const subcategorias = document.querySelector("#subcategorias");
