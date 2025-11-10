@@ -1,4 +1,4 @@
-[
+export const productos = [
     {
         "id": "K-CAT-ACC-BARRA-12PLG",
         "titulo": "BARRA DE ACERO INOXIDABLE PARA MESAS CALIENTES 12\"",
@@ -2849,4 +2849,5 @@
         "descripcion": "MEDIDA: 17.5 X 163 X 15CM\n\nPESO: 240g\n\nCAPACIDAD: 2.2 litros\n\nMATERIAL: Policarbonato",
         "precio": 39.0
     }
-]
+
+];
