@@ -1,48 +1,438 @@
 export const productos = [
     {
-        "id": "K-CAT-ACC-BARRA-12PLG",
-        "titulo": "BARRA DE ACERO INOXIDABLE PARA MESAS CALIENTES 12\"",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/barra-para-mesas-calientes-12plg.webp",
+        "id": "K-CAT-CHAF-DLX-RA2301A",
+        "titulo": "CHAFER DELUXE RECTANGULAR DE 9LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/E1104.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
         },
         "subcategoria": {
-            "id": "ACCESORIOS_PARA_INSERTOS",
-            "nombre": "ACCESORIOS PARA INSERTOS"
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
         },
-        "descripcion": "La barra de acero inoxidable para mesas calientes de 12″ es un accesorio esencial para mantener la organización y funcionalidad en cocinas profesionales, buffets y servicios de catering.",
-        "precio": 25.0
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 9lts",
+        "precio": 1600.0
     },
     {
-        "id": "K-CAT-ACC-BARRA-20PLG",
-        "titulo": "BARRA DE ACERO INOXIDABLE PARA MESAS CALIENTES 20\"",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/barra-para-mesas-calientes-20plg.webp-1.webp",
+        "id": "CAT-CHAF-DLX-RA2101B",
+        "titulo": "CHAFER DELUXE REDONDO DE 6LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/roll-top-round-chafer-600x600.jpg",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
         },
         "subcategoria": {
-            "id": "ACCESORIOS_PARA_INSERTOS",
-            "nombre": "ACCESORIOS PARA INSERTOS"
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
         },
-        "descripcion": "La barra de acero inoxidable para mesas calientes de 12″ es un accesorio esencial para mantener la organización y funcionalidad en cocinas profesionales, buffets y servicios de catering.",
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 6lts",
+        "precio": 1250.0
+    },
+    {
+        "id": "K-CAT-CHAF-ECO-WH433B",
+        "titulo": "CHAFER ECONOMICO RECTANGULAR DE 9LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-04-01-at-9.03.01-PM.jpeg",
+        "categoria": {
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
+        },
+        "subcategoria": {
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 9lts",
+        "precio": 450.0
+    },
+    {
+        "id": "K-CAT-CHAF-REP-GAS",
+        "titulo": "RECIPIENTE PARA LATA DE GAS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/CDB0002-1-1.jpg",
+        "categoria": {
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
+        },
+        "subcategoria": {
+            "id": "BANQUETES",
+            "nombre": "BANQUETES"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable",
         "precio": 40.0
     },
     {
-        "id": "K-LAV-VASOS-DELUXE",
-        "titulo": "Lava Vasos Empotrable en Inserto de Acero Inoxidable GN 1/6",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/4354_original_eppr662-600x600.webp",
+        "id": "K-BAR-MAT-MINI-12X12",
+        "titulo": "MAT MODULAR CUADRADO DE 12X12″",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/1828990.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "BAR",
+            "nombre": "BAR"
         },
         "subcategoria": {
-            "id": "ACCESORIOS_PARA_INSERTOS",
-            "nombre": "ACCESORIOS PARA INSERTOS"
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
         },
-        "descripcion": "Completo con Mangueras y T de Acople.\n\nEste lava vasos empotrable está diseñado para instalarse en insertos gastronorm GN 1/6 de 6.5 cm de profundidad",
-        "precio": 499.0
+        "descripcion": "MEDIDAS: 12X12″ / 30X30cm\n\nMATERIAL: TPR",
+        "precio": 45.0
+    },
+    {
+        "id": "K-BAR-ORGANIZADOR-4DIV",
+        "titulo": "ORGANIZADOR DE 4 ESPACIOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/17004-2.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 50 X 16 X 9CM\n\nMATERIAL: Policarbonato + Plastico + ABS",
+        "precio": 199.0
+    },
+    {
+        "id": "K-BAR-CADDY",
+        "titulo": "CADDY PARA BARRA",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/2360634.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 24 X 15 X 10.5CM\n\nMATERIAL: ABS",
+        "precio": 50.0
+    },
+    {
+        "id": "K-BAR-ESCARCHAR-3DIV",
+        "titulo": "ESCARCHADOR DE 3 DIVISIONES",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/2269812.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 20 X 16 X 7CM\n\nMATERIAL: ABS",
+        "precio": 79.0
+    },
+    {
+        "id": "K-BAR-ESCARCHAR-ESPONJA",
+        "titulo": "ESPONJA PARA ESCARCHADOR",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/04/2085249.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDA: 14.5cm diametro",
+        "precio": 10.0
+    },
+    {
+        "id": "K-BAR-COLGADOR-AZUL",
+        "titulo": "COLGADOR DE BOTELLAS AZUL (5 UNIDADES)",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/s-l1200-1-600x600.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 6 X 4 X 8.8cm\n\nMATERIAL: Plástico",
+        "precio": 75.0
+    },
+    {
+        "id": "K-BAR-COLGADOR-MORADO",
+        "titulo": "COLGADOR DE BOTELLAS ROSADO (5 UNIDADES)",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/716746400_max-600x600.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 6 X 4 X 8.8cm\n\nMATERIAL: Plástico",
+        "precio": 75.0
+    },
+    {
+        "id": "K-BAR-COLGADOR-NARANJA",
+        "titulo": "COLGADOR DE BOTELLAS NARANJA (5 UNIDADES)",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/716746400_max.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 6 X 4 X 8.8cm\n\nMATERIAL: Plástico",
+        "precio": 75.0
+    },
+    {
+        "id": "K-BAR-COLGADOR-BLANCO",
+        "titulo": "COLGADOR DE BOTELLAS BLANCO",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/716746400_max.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 6 X 4 X 8.8cm\n\nMATERIAL: Plástico",
+        "precio": 75.0
+    },
+    {
+        "id": "K-BAR-COLGADOR-VERDE",
+        "titulo": "COLGADOR DE BOTELLAS VERDE",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/716746400_max-600x600.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 6 X 4 X 8.8cm\n\nMATERIAL: Plástico",
+        "precio": 75.0
+    },
+    {
+        "id": "K-BAR-MAT-CUAD-45X31",
+        "titulo": "BAR MAT CUADRADO DE 45X31CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/Facmogu-Heavy-Duty-Bar-Mat-2-600x600.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 45 X 31 X 1CM\n\nMATERIAL: PVC",
+        "precio": 99.0
+    },
+    {
+        "id": "K-BAR-MAT-SLIM-SHORT",
+        "titulo": "BAR MAT SLIM DE 62X9CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/71306_large-1.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 62 X 9 X 2.2CM\n\nMATERIAL: PVC",
+        "precio": 49.0
+    },
+    {
+        "id": "K-BAR-MAT-SLIM-LARGE",
+        "titulo": "BAR MAT SLIM DE 69X8.5CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/barconic-barmat-scene1_512x512.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "MEDIDAS: 69 X 8.5 X 1.6CM\n\nMATERIAL: PVC",
+        "precio": 59.0
+    },
+    {
+        "id": "K-BAR-MIXER-0.5L-AMA",
+        "titulo": "BOTELLA MIXER AMARILLA DE 0.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/H0625695acec444ff9f51f66ad0cbb1007.jpg_-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 23CM\n\nCAPACIDAD: 0.5 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 29.0
+    },
+    {
+        "id": "K-BAR-MIXER-0.5L-1-1",
+        "titulo": "BOTELLA MIXER NARANJA DE 0.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/orange-juice-pourer-cleancopy_700x700-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 23CM\n\nCAPACIDAD: 0.5 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 29.0
+    },
+    {
+        "id": "K-BAR-MIXER-0.5L-ROJO",
+        "titulo": "BOTELLA MIXER ROJA DE 0.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/red-correct-juice-pourer-cleancopy_700x700-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 23CM\n\nCAPACIDAD: 0.5 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 29.0
+    },
+    {
+        "id": "K-BAR-MIXER-0.5L-VERDE",
+        "titulo": "BOTELLA MIXER VERDE DE 0.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/images-2.jpeg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 23CM\n\nCAPACIDAD: 0.5 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 29.0
+    },
+    {
+        "id": "K-BAR-MIXER-1L-AMA",
+        "titulo": "BOTELLA MIXER AMARILLA DE 1L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/770616-Photoroom.png",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 26CM\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 35.0
+    },
+    {
+        "id": "K-BAR-MIXER-1L-CAFÉ",
+        "titulo": "BOTELLA MIXER CAFE DE 1L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/770323-removebg-preview.png",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 26CM\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 35.0
+    },
+    {
+        "id": "K-BAR-MIXER-1L-NAR",
+        "titulo": "BOTELLA MIXER NARANJA DE 1L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/41itA-Rj2PL-600x600.jpg",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 26CM\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 35.0
+    },
+    {
+        "id": "K-BAR-MIXER-1L-ROJO",
+        "titulo": "BOTELLA MIXER ROJA DE 1L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/770461-removebg-preview.png",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 26CM\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 35.0
+    },
+    {
+        "id": "K-BAR-MIXER-1L-VERDE",
+        "titulo": "BOTELLA MIXER VERDE DE 1L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/770371-removebg-preview.png",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 26CM\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 35.0
+    },
+    {
+        "id": "K-BAR-MIXER-2L-AMA",
+        "titulo": "BOTELLA MIXER AMARILLA DE 2L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/RWT0496Y-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 35CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 45.0
+    },
+    {
+        "id": "K-BAR-MIXER-2L-NAR",
+        "titulo": "BOTELLA MIXER NARANJA DE 2L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0496T-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 35CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 45.0
+    },
+    {
+        "id": "K-BAR-MIXER-2L-ROJO",
+        "titulo": "BOTELLA MIXER ROJA DE 2L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0496R-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 35CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 45.0
     },
     {
         "id": "K-CFT-KNOCKBOX",
@@ -328,6 +718,411 @@ export const productos = [
         },
         "descripcion": "MEDIDAS: 9 X 3.5cm\n\nMATERIAL: Plástico",
         "precio": 29.0
+    },
+    {
+        "id": "K-DISPEN-JARRA-SS-90ML",
+        "titulo": "JARRA CREMERA DE ACERO 3OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/399094.webp",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "La jarra cremera de acero de 3oz es ideal para servir leche, crema o salsas en pequeñas porciones.",
+        "precio": 24.0
+    },
+    {
+        "id": "K-DISPEN-JARRA-POR-3OZ",
+        "titulo": "JARRA CREMERA DE PORCELANA 3OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/10/1005041-removebg-preview.png",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "La jarra cremera de porcelana de 3oz es ideal para servir leche, crema o acompañamientos líquidos en porciones pequeñas",
+        "precio": 19.0
+    },
+    {
+        "id": "K-DISPEN-KETTLE-1LT",
+        "titulo": "JARRA DE 1 LITRO CON CUELLO DE GANSO",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/jarra-cuello-de-ganso-1lt-600x600.webp",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "La jarra cuello de ganso 1 litro es ideal para preparar café de especialidad con precisión",
+        "precio": 155.0
+    },
+    {
+        "id": "K-DISPEN-JARRA-MED-360ML",
+        "titulo": "JARRA LECHERA CON MEDIDAS DE 12OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-JARRA-MED-360ML-2.jpg",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "CAPACIDAD: 360ml / 12OZ\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 79.0
+    },
+    {
+        "id": "K-DISPEN-JARRA-MED-600ML",
+        "titulo": "JARRA LECHERA CON MEDIDAS DE 20OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/51Fdb70omeL._AC_UF10001000_QL80_-600x605.jpg",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "CAPACIDAD: 600ml / 20OZ\n\nPESO: 211g\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 99.0
+    },
+    {
+        "id": "K-DISPEN-JARRA-MED-1000ML",
+        "titulo": "JARRA LECHERA CON MEDIDAS DE 34OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-JARRA-MED-1000ML-1.webp",
+        "categoria": {
+            "id": "CAFÉ_Y_TE",
+            "nombre": "CAFÉ Y TÉ"
+        },
+        "subcategoria": {
+            "id": "JARRAS",
+            "nombre": "JARRAS"
+        },
+        "descripcion": "CAPACIDAD: 1000ml / 32OZ\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 119.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-TEF-10",
+        "titulo": "SARTÉN CON TEFLÓN DE 10PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/2634801.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable y teflón\n\nMEDIDAS: 10 pulgadas",
+        "precio": 250.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-TEF-12",
+        "titulo": "SARTÉN CON TEFLÓN DE 12PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/2634801.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable y teflón\n\nMEDIDAS: 12 pulgadas",
+        "precio": 375.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-TEF-8",
+        "titulo": "SARTÉN CON TEFLÓN DE 8PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/2634801.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable y teflón\n\nMEDIDAS: 8 pulgadas",
+        "precio": 190.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-8",
+        "titulo": "SARTÉN DE 8PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2159426.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nMEDIDAS: 8 pulgadas",
+        "precio": 195.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-10",
+        "titulo": "SARTÉN DE 10PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2159426.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nMEDIDAS: 10 pulgadas",
+        "precio": 245.0
+    },
+    {
+        "id": "K-COOK-SS-SARTEN-12",
+        "titulo": "SARTÉN DE 12PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2140477.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nMEDIDAS: 12 pulgadas",
+        "precio": 375.0
+    },
+    {
+        "id": "K-COOK-SS-SALSA-2QT",
+        "titulo": "OLLA SALSERA DE 2 QUARTOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2150167.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 2 quartos / 1.9lts",
+        "precio": 195.0
+    },
+    {
+        "id": "K-COOK-SS-SALSA-4QT",
+        "titulo": "OLLA SALSERA DE 4 QUARTOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2165145.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 4 quartos / 3.8lts",
+        "precio": 275.0
+    },
+    {
+        "id": "K-COOK-SS-SALSA-6.5QT",
+        "titulo": "OLLA SALSERA DE 6.5 QUARTOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2166216.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 6.5 quartos / 6.2lts",
+        "precio": 345.0
+    },
+    {
+        "id": "K-COOK-SS-SALSA-10QT",
+        "titulo": "OLLA SALSERA DE 10 QUARTOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2166216.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 10 quartos / 9.6lts",
+        "precio": 495.0
+    },
+    {
+        "id": "K-COOK-SS-OLLA-8L",
+        "titulo": "OLLA DE 8 LITROS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2143828-300x300.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 8lts",
+        "precio": 335.0
+    },
+    {
+        "id": "K-COOK-SS-OLLA-12L",
+        "titulo": "OLLA DE 12 LITROS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2143828.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 12lts",
+        "precio": 575.0
+    },
+    {
+        "id": "K-COOK-SS-OLLA-18L",
+        "titulo": "OLLA DE 18 LITROS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2226366.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 18lts",
+        "precio": 645.0
+    },
+    {
+        "id": "K-COOK-SS-OLLA-32L",
+        "titulo": "OLLA DE 32 LITROS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/2223751.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "ACERO INOXIDABLE",
+            "nombre": "ACERO INOXIDABLE"
+        },
+        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 32lts",
+        "precio": 795.0
+    },
+    {
+        "id": "K-COOK-IRON-PLANCHA-50X23",
+        "titulo": "PLANCHA DOBLE LADO DE 50X23CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2516135.webp",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "Esta plancha doble cara de 50×23 cm está fabricada en hierro fundido de alta resistencia,",
+        "precio": 245.0
+    },
+    {
+        "id": "K-COOK-IRON-SARTEN-6",
+        "titulo": "SARTÉN DE 6PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/230115_PDP_CastIron_Product_Overview_Img2-1x-700x467-1-600x400.jpeg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MEDIDAS: 16 x 3cm / 6 pulgadas\n\nMATERIAL: Hierro fundido",
+        "precio": 85.0
+    },
+    {
+        "id": "K-COOK-IRON-SARTEN-8",
+        "titulo": "SARTÉN DE 8PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/230115_PDP_CastIron_Product_Overview_Img2-1x-700x467-1-600x400.jpeg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MEDIDAS: 20 x 3.5cm / 8 pulgadas\n\nMATERIAL: Hierro fundido",
+        "precio": 125.0
+    },
+    {
+        "id": "K-COOK-IRON-SARTEN-10",
+        "titulo": "SARTÉN DE 10PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/230115_PDP_CastIron_Product_Overview_Img2-1x-700x467-1.jpeg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MEDIDAS: 26 x 4cm / 10 pulgadas\n\nMATERIAL: Hierro fundido",
+        "precio": 150.0
+    },
+    {
+        "id": "K-COOK-IRON-WOK-13",
+        "titulo": "WOK DE 13PLG",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/images-1-2.jpg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MEDIDA: 33 X 9cm\n\nMATERIAL: Hierro fundido",
+        "precio": 275.0
+    },
+    {
+        "id": "K-COOK-IRON-PRENSA",
+        "titulo": "PRENSA DE HIERRO FUNDIDO",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/6b536a740154460d9769d9a7dd487605-300x300.jpeg",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MEDIDAS: 20 X 10.5 X 1cm\n\nMATERIAL: Hierro fundido con mango de madera",
+        "precio": 75.0
+    },
+    {
+        "id": "K-COOK-IRON-MANGO",
+        "titulo": "MANGO DE SILICÓN PARA SARTÉN",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/80131654ANM006G-600x600.png",
+        "categoria": {
+            "id": "COCCION",
+            "nombre": "COCCIÓN"
+        },
+        "subcategoria": {
+            "id": "HIERRO FUNDIDO",
+            "nombre": "HIERRO FUNDIDO"
+        },
+        "descripcion": "MATERIAL: Silicón",
+        "precio": 20.0
     },
     {
         "id": "K-DES-ALU-RE150-TAPA",
@@ -645,394 +1440,379 @@ export const productos = [
         "precio": 115.0
     },
     {
-        "id": "K-LIMP-SPRAY-AZUL",
-        "titulo": "ATOMIZADOR AZUL DE 750ML",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/images-1-6.jpeg",
+        "id": "K-BAR-GAR-LIMON",
+        "titulo": "RODAJAS DE LIMÓN DESHIDRATADA",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-2-600x469.jpeg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "ATOMIZADORES",
-            "nombre": "ATOMIZADORES"
+            "id": "GUARNICIONES",
+            "nombre": "GUARNICIONES"
         },
-        "descripcion": "CAPACIDAD: 750ml",
-        "precio": 20.0
+        "descripcion": "PESO: 210g\n\nCANTIDAD: 140-145 RODAJAS",
+        "precio": 65.0
     },
     {
-        "id": "K-LIMP-SPRAY-ROJO",
-        "titulo": "ATOMIZADOR ROJO DE 750ML",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2568046-300x300.jpg",
+        "id": "K-BAR-GAR-NARANJA",
+        "titulo": "RODAJAS DE NARANJA DESHIDRATADA",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-12.20.54-PM-600x450.jpeg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "ATOMIZADORES",
-            "nombre": "ATOMIZADORES"
+            "id": "GUARNICIONES",
+            "nombre": "GUARNICIONES"
         },
-        "descripcion": "CAPACIDAD: 750ml",
-        "precio": 20.0
+        "descripcion": "PESO: 200g\n\nCANTIDAD: 74-80 RODAJAS",
+        "precio": 75.0
     },
     {
-        "id": "K-VAJ-BAJAPLATO-W02",
-        "titulo": "BAJA PLATOS PLASTICO BLANCO CLASICO DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-BLANCO-CLASICO-DE-33CM.webp",
+        "id": "K-BAR-GAR-TORONJA",
+        "titulo": "RODAJAS DE TORONJA DESHIDRATADA",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-12.06.21-PM-600x450.jpeg",
         "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
+            "id": "GUARNICIONES",
+            "nombre": "GUARNICIONES"
         },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-W04",
-        "titulo": "BAJA PLATOS PLASTICO BLANCO ELEGANTE DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA_PLATO_PLASTICO_BLANCO_ELEGANTE_DE_33CM_1-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-W03",
-        "titulo": "BAJA PLATOS PLASTICO BLANCO FLORAL DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-BLANCO-FLORAL-DE-33CM-600x600.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-W01",
-        "titulo": "BAJA PLATOS PLASTICO BLANCO VINTAGE DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-10-06_at_8.49.19_AM-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-C01",
-        "titulo": "BAJA PLATOS PLASTICO CAFE CAMPESTRE DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.11.02_AM-removebg-preview.png",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-G42/2",
-        "titulo": "BAJA PLATOS PLASTICO VERDE COLONIAL DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.48_AM-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-N02",
-        "titulo": "BAJA PLATOS PLASTICO DORADO NATIVIDAD DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.47_AM__1_-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-N03",
-        "titulo": "BAJA PLATOS PLASTICO ROJO NATIVIDAD DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.18.55_AM-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-N01",
-        "titulo": "BAJA PLATOS PLASTICO PLATEADO NATIVIDAD DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.18.56_AM-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-F18",
-        "titulo": "BAJA PLATOS PLASTICO TRANSPARENTE PUNTOS DORADOS DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/baja-plato-transparente-puntos-dorados.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-F54/2",
-        "titulo": "BAJA PLATOS PLASTICO DORADO SOL DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/02_105935797_SI_11-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-B01",
-        "titulo": "BAJA PLATOS PLASTICO NEGRO ELEGANTE DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.47_AM-removebg-preview.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-VAJ-BAJAPLATO-G41",
-        "titulo": "BAJA PLATOS PLASTICO PLATEADO LUNAR DE 33 CM",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-PLATEADO-LUNAR-DE-33CM.webp",
-        "categoria": {
-            "id": "SOBREMESA",
-            "nombre": "SOBREMESA"
-        },
-        "subcategoria": {
-            "id": "BAJA_PLATOS",
-            "nombre": "BAJA PLATOS"
-        },
-        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
-        "precio": 25.0
-    },
-    {
-        "id": "K-CAT-CHAF-DLX-RA2301A",
-        "titulo": "CHAFER DELUXE RECTANGULAR DE 9LTS",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/01/E1104.webp",
-        "categoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "subcategoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 9lts",
-        "precio": 1600.0
-    },
-    {
-        "id": "CAT-CHAF-DLX-RA2101B",
-        "titulo": "CHAFER DELUXE REDONDO DE 6LTS",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/01/roll-top-round-chafer-600x600.jpg",
-        "categoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "subcategoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 6lts",
-        "precio": 1250.0
-    },
-    {
-        "id": "K-CAT-CHAF-ECO-WH433B",
-        "titulo": "CHAFER ECONOMICO RECTANGULAR DE 9LTS",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-04-01-at-9.03.01-PM.jpeg",
-        "categoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "subcategoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 9lts",
-        "precio": 450.0
-    },
-    {
-        "id": "K-CAT-CHAF-REP-GAS",
-        "titulo": "RECIPIENTE PARA LATA DE GAS",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/01/CDB0002-1-1.jpg",
-        "categoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "subcategoria": {
-            "id": "BANQUETES",
-            "nombre": "BANQUETES"
-        },
-        "descripcion": "MATERIAL: Acero inoxidable",
-        "precio": 40.0
-    },
-    {
-        "id": "K-LIMP-TRASH-SLIM-30L",
-        "titulo": "BASURERO SLIM CON TAPA DE 30L",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/51oR6WNHXL-600x600.jpg",
-        "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
-        },
-        "subcategoria": {
-            "id": "BASUREROS",
-            "nombre": "BASUREROS"
-        },
-        "descripcion": "CAPACIDAD: 30lt / 8 galones\n\nMATERIAL: Plástico",
+        "descripcion": "PESO: 180g\n\nCANTIDAD: 44-50 RODAJAS",
         "precio": 125.0
     },
     {
-        "id": "K-LIMP-TRASH-SLIM-65L",
-        "titulo": "BASURERO SLIM CON TAPA DE 65L",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/2149300.webp",
+        "id": "K-BAR-GAR-CAÑA",
+        "titulo": "BASTONES DE CAÑA DE AZUCAR DESHIDRATADOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-1-600x450.jpeg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "BASUREROS",
-            "nombre": "BASUREROS"
+            "id": "GUARNICIONES",
+            "nombre": "GUARNICIONES"
         },
-        "descripcion": "CAPACIDAD: 65lt / 17 galones\n\nMATERIAL: Plástico",
-        "precio": 195.0
+        "descripcion": "PESO: 300g\n\nCANTIDAD: 76-80 BASTONES",
+        "precio": 55.0
     },
     {
-        "id": "K-LIMP-TRASH-SLIM-90L",
-        "titulo": "BASURERO SLIM CON TAPA DE 90L",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/2149300.webp",
+        "id": "K-BAR-GAR-PIÑA",
+        "titulo": "RODAJAS DE PIÑA DESHIDRATADA",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-600x450.jpeg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "BASUREROS",
-            "nombre": "BASUREROS"
+            "id": "GUARNICIONES",
+            "nombre": "GUARNICIONES"
         },
-        "descripcion": "CAPACIDAD: 90lt / 24 galones\n\nMATERIAL: Plástico",
-        "precio": 225.0
+        "descripcion": "PESO: 360g\n\nCANTIDAD: 64-70 RODAJAS",
+        "precio": 130.0
     },
     {
-        "id": "K-LIMP-CUBETA-3QT-AMA",
-        "titulo": "CUBETA AMARILLA DE 3QT",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-600x588.jpeg",
+        "id": "K-DES-SEG-NITRILO-L",
+        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA L COLOR NEGRO",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
         },
         "subcategoria": {
-            "id": "CUBETAS",
-            "nombre": "CUBETAS"
+            "id": "SEGURIDAD",
+            "nombre": "SEGURIDAD"
         },
-        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Amarillo\n\nMATERIAL: Poliestireno",
+        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
+        "precio": 60.0
+    },
+    {
+        "id": "K-DES-SEG-NITRILO-L",
+        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA M COLOR NEGRO",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
+        "categoria": {
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
+        },
+        "subcategoria": {
+            "id": "SEGURIDAD",
+            "nombre": "SEGURIDAD"
+        },
+        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
+        "precio": 60.0
+    },
+    {
+        "id": "K-DES-SEG-NITRILO-L",
+        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA S COLOR NEGRO",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
+        "categoria": {
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
+        },
+        "subcategoria": {
+            "id": "SEGURIDAD",
+            "nombre": "SEGURIDAD"
+        },
+        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
+        "precio": 60.0
+    },
+    {
+        "id": "K-DES-SEG-GUANTE-PP",
+        "titulo": "100 GUANTES PLÁSTICO PARA ALIMENTOS",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2659701.webp",
+        "categoria": {
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
+        },
+        "subcategoria": {
+            "id": "SEGURIDAD",
+            "nombre": "SEGURIDAD"
+        },
+        "descripcion": "Los guantes plásticos desechables para alimentos son la opción ideal para mantener la higiene y seguridad en manipulación de alimentos en cocinas, restaurantes, supermercados y servicios de catering",
+        "precio": 7.0
+    },
+    {
+        "id": "K-DES-SEG-HAIR-COFIA",
+        "titulo": "100 COFIAS ELÁSTICAS DESECHABLES",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/728910.webp",
+        "categoria": {
+            "id": "DESECHABLES_Y_CONSUMIBLES",
+            "nombre": "DESECHABLES Y CONSUMIBLES"
+        },
+        "subcategoria": {
+            "id": "SEGURIDAD",
+            "nombre": "SEGURIDAD"
+        },
+        "descripcion": "La cofia elástica desechable es un accesorio indispensable para mantener la higiene en ambientes médicos, de alimentos y limpieza.",
         "precio": 30.0
     },
     {
-        "id": "K-LIMP-CUBETA-3QT-RED",
-        "titulo": "CUBETA ROJA DE 3QT",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-2-600x588.jpeg",
+        "id": "K-VAS-VID-MILK-1LT",
+        "titulo": "PICHEL LECHERO DE 1LT",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/3830-600x600.jpg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
         },
         "subcategoria": {
-            "id": "CUBETAS",
-            "nombre": "CUBETAS"
+            "id": "PICHELES",
+            "nombre": "PICHELES"
         },
-        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Roja\n\nMATERIAL: Poliestireno",
-        "precio": 30.0
+        "descripcion": "MATERIAL: Vidrio\n\nCAPACIDAD: 1000ml / 32oz",
+        "precio": 19.0
     },
     {
-        "id": "CUBETA VERDE DE 3QT",
-        "titulo": "CUBETA VERDE DE 3QT",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-1-1-600x588.jpeg",
+        "id": "K-DISPEN-PICHEL-VID-1.3L",
+        "titulo": "PICHEL DE VIDRIO DE 1.3LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/07/319349896.webp",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
         },
         "subcategoria": {
-            "id": "CUBETAS",
-            "nombre": "CUBETAS"
+            "id": "PICHELES",
+            "nombre": "PICHELES"
         },
-        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Verde\n\nMATERIAL: Poliestireno",
-        "precio": 30.0
+        "descripcion": "MEDIDAS: 11.2cm X 9.5CM X 21.2CM\n\nCAPACIDAD: 1300ML / 43 onzas\n\nMATERIAL: Vidrio",
+        "precio": 25.0
     },
     {
-        "id": "K-LIMP-CUBETA-32L",
-        "titulo": "CUBETA CON ESCURRIDOR DE 32LT",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2534801.jpg",
+        "id": "K-DISPEN-PICHEL-VID-YZH36-1.7",
+        "titulo": "PICHEL DE VIDRIO DE 1.7LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/04/a6ac108af340cf61afc21919b53a5f352b950fce20b711e2d97fdb2e5a4c306e-600x600.jpeg",
         "categoria": {
-            "id": "LIMPIEZA",
-            "nombre": "LIMPIEZA"
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
         },
         "subcategoria": {
-            "id": "CUBETAS",
-            "nombre": "CUBETAS"
+            "id": "PICHELES",
+            "nombre": "PICHELES"
         },
-        "descripcion": "CAPACIDAD: 32lt",
-        "precio": 650.0
+        "descripcion": "MEDIDAS: 26×10.2cm\n\nCAPACIDAD: 1700ML / 56 onzas\n\nMATERIAL: Vidrio",
+        "precio": 29.0
+    },
+    {
+        "id": "K-DISPEN-PICHEL-SAN-14L",
+        "titulo": "PICHEL DE 1.4L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/105886.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "PICHELES",
+            "nombre": "PICHELES"
+        },
+        "descripcion": "CAPACIDAD: 1.4 litros\n\nMEDIDAS: 11.7 X 20CM\n\nMATERIAL: Acrílico (SAN)",
+        "precio": 34.0
+    },
+    {
+        "id": "K-DISPEN-PICHEL-SAN-18L",
+        "titulo": "PICHEL DE 1.8L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/5540-07.jpg",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "PICHELES",
+            "nombre": "PICHELES"
+        },
+        "descripcion": "CAPACIDAD: 1.8 litros\n\nMEDIDAS: 13 X 20CM\n\nMATERIAL: Acrílico (SAN)",
+        "precio": 37.0
+    },
+    {
+        "id": "K-DISPEN-PICHEL-SAN-72OZ",
+        "titulo": "PICHEL DE 2.2L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/5540-07.jpg",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "PICHELES",
+            "nombre": "PICHELES"
+        },
+        "descripcion": "CAPACIDAD: 72oz / 2.2 litros\n\nMATERIAL: Acrílico (SAN)",
+        "precio": 39.0
+    },
+    {
+        "id": "K-DISPEN-REFRES-PP-3.5L",
+        "titulo": "REFRESQUERA SIMPLE DE 3.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/07/49cf0af4-d38d-4fdb-a9f1-36818e982564.8d52808c9588162e8d85aee16f5a2263-600x600.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "REFRESQUERAS",
+            "nombre": "REFRESQUERAS"
+        },
+        "descripcion": "MEDIDAS: 25.5 X 17 X 10.5cm\n\nCAPACIDAD: 3.5 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
+        "precio": 49.0
+    },
+    {
+        "id": "K-DISPEN-REFRES-PP-11L",
+        "titulo": "REFRESQUERA SIMPLE DE 11L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/2320244-e1677006774336.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "REFRESQUERAS",
+            "nombre": "REFRESQUERAS"
+        },
+        "descripcion": "MEDIDAS: 42.5 X 21 X 54.5CM\n\nCAPACIDAD: 11 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
+        "precio": 379.0
+    },
+    {
+        "id": "K-DISPEN-REFRES-PP-19L",
+        "titulo": "REFRESQUERA SIMPLE DE 19L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1534974.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "REFRESQUERAS",
+            "nombre": "REFRESQUERAS"
+        },
+        "descripcion": "MEDIDAS: 35 X 28 X 57CM\n\nCAPACIDAD: 19 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
+        "precio": 449.0
+    },
+    {
+        "id": "K-DISPEN-REFRES-PP-22L",
+        "titulo": "REFRESQUERA DOBLE DE 22L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1535001-600x600.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "REFRESQUERAS",
+            "nombre": "REFRESQUERAS"
+        },
+        "descripcion": "MEDIDAS: 42 X 43 X 54CM\n\nCAPACIDAD: 22 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
+        "precio": 729.0
+    },
+    {
+        "id": "K-DISPEN-REFRES-PP-CHORRO",
+        "titulo": "CHORRO DE REPUESTO",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-REFRES-PP-CHORRO.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "REFRESQUERAS",
+            "nombre": "REFRESQUERAS"
+        },
+        "descripcion": "MATERIAL: Plástico",
+        "precio": 43.0
+    },
+    {
+        "id": "K-CAT-ACC-BARRA-12PLG",
+        "titulo": "BARRA DE ACERO INOXIDABLE PARA MESAS CALIENTES 12\"",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/barra-para-mesas-calientes-12plg.webp",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_INSERTOS",
+            "nombre": "ACCESORIOS PARA INSERTOS"
+        },
+        "descripcion": "La barra de acero inoxidable para mesas calientes de 12″ es un accesorio esencial para mantener la organización y funcionalidad en cocinas profesionales, buffets y servicios de catering.",
+        "precio": 25.0
+    },
+    {
+        "id": "K-CAT-ACC-BARRA-20PLG",
+        "titulo": "BARRA DE ACERO INOXIDABLE PARA MESAS CALIENTES 20\"",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/barra-para-mesas-calientes-20plg.webp-1.webp",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_INSERTOS",
+            "nombre": "ACCESORIOS PARA INSERTOS"
+        },
+        "descripcion": "La barra de acero inoxidable para mesas calientes de 12″ es un accesorio esencial para mantener la organización y funcionalidad en cocinas profesionales, buffets y servicios de catering.",
+        "precio": 40.0
+    },
+    {
+        "id": "K-CAT-INS-REDONDO-6.5CM",
+        "titulo": "INSERTO REDONDO PARA CHAFER",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/images.jpeg",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_INSERTOS",
+            "nombre": "ACCESORIOS PARA INSERTOS"
+        },
+        "descripcion": "MEDIDAS: 15″ diametro / 6.5cm altura\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 160.0
+    },
+    {
+        "id": "K-LAV-VASOS-DELUXE",
+        "titulo": "Lava Vasos Empotrable en Inserto de Acero Inoxidable GN 1/6",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/4354_original_eppr662-600x600.webp",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_INSERTOS",
+            "nombre": "ACCESORIOS PARA INSERTOS"
+        },
+        "descripcion": "Completo con Mangueras y T de Acople.\n\nEste lava vasos empotrable está diseñado para instalarse en insertos gastronorm GN 1/6 de 6.5 cm de profundidad",
+        "precio": 499.0
     },
     {
         "id": "K-CAT-INS-PC-DRENA-1/1",
@@ -1123,81 +1903,6 @@ export const productos = [
         },
         "descripcion": "MEDIDAS: 12 x 5 x 1.5cm\n\nMATERIAL: Policarbonato",
         "precio": 10.0
-    },
-    {
-        "id": "K-BAR-GAR-LIMON",
-        "titulo": "RODAJAS DE LIMÓN DESHIDRATADA",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-2-600x469.jpeg",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "GUARNICIONES",
-            "nombre": "GUARNICIONES"
-        },
-        "descripcion": "PESO: 210g\n\nCANTIDAD: 140-145 RODAJAS",
-        "precio": 65.0
-    },
-    {
-        "id": "K-BAR-GAR-NARANJA",
-        "titulo": "RODAJAS DE NARANJA DESHIDRATADA",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-12.20.54-PM-600x450.jpeg",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "GUARNICIONES",
-            "nombre": "GUARNICIONES"
-        },
-        "descripcion": "PESO: 200g\n\nCANTIDAD: 74-80 RODAJAS",
-        "precio": 75.0
-    },
-    {
-        "id": "K-BAR-GAR-TORONJA",
-        "titulo": "RODAJAS DE TORONJA DESHIDRATADA",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-12.06.21-PM-600x450.jpeg",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "GUARNICIONES",
-            "nombre": "GUARNICIONES"
-        },
-        "descripcion": "PESO: 180g\n\nCANTIDAD: 44-50 RODAJAS",
-        "precio": 125.0
-    },
-    {
-        "id": "K-BAR-GAR-CAÑA",
-        "titulo": "BASTONES DE CAÑA DE AZUCAR DESHIDRATADOS",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-1-600x450.jpeg",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "GUARNICIONES",
-            "nombre": "GUARNICIONES"
-        },
-        "descripcion": "PESO: 300g\n\nCANTIDAD: 76-80 BASTONES",
-        "precio": 55.0
-    },
-    {
-        "id": "K-BAR-GAR-PIÑA",
-        "titulo": "RODAJAS DE PIÑA DESHIDRATADA",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-28-at-11.48.19-AM-600x450.jpeg",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "GUARNICIONES",
-            "nombre": "GUARNICIONES"
-        },
-        "descripcion": "PESO: 360g\n\nCANTIDAD: 64-70 RODAJAS",
-        "precio": 130.0
     },
     {
         "id": "K-CAT-INS-SOPA-TAPA-S",
@@ -2145,94 +2850,259 @@ export const productos = [
         "precio": 25.0
     },
     {
-        "id": "K-DISPEN-JARRA-SS-90ML",
-        "titulo": "JARRA CREMERA DE ACERO 3OZ",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/399094.webp",
+        "id": "K-CAT-INS-PC-LID-1/4",
+        "titulo": "TAPADERA PARA INSERTO 1/4",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-4-600x600.jpg",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/4",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/4"
         },
-        "descripcion": "La jarra cremera de acero de 3oz es ideal para servir leche, crema o salsas en pequeñas porciones.",
-        "precio": 24.0
+        "descripcion": "MEDIDA: 26.5 X 16CM\n\nPESO: 100g\n\nMATERIAL: Policarbonato",
+        "precio": 25.0
     },
     {
-        "id": "K-DISPEN-JARRA-POR-3OZ",
-        "titulo": "JARRA CREMERA DE PORCELANA 3OZ",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/10/1005041-removebg-preview.png",
+        "id": "K-CAT-INS-PC-RANU-1/4",
+        "titulo": "TAPADERA RANURADA PARA 1/4",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2581132.jpg",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/4",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/4"
         },
-        "descripcion": "La jarra cremera de porcelana de 3oz es ideal para servir leche, crema o acompañamientos líquidos en porciones pequeñas",
-        "precio": 19.0
+        "descripcion": "MEDIDAS: 26.5 X 16.2cm\n\nMATERIAL: Policarbonato",
+        "precio": 30.0
     },
     {
-        "id": "K-DISPEN-KETTLE-1LT",
-        "titulo": "JARRA DE 1 LITRO CON CUELLO DE GANSO",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/09/jarra-cuello-de-ganso-1lt-600x600.webp",
+        "id": "K-CAT-INS-PC-LID-1/6",
+        "titulo": "TAPADERA PARA INSERTO 1/6",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-600x600.jpg",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
         },
-        "descripcion": "La jarra cuello de ganso 1 litro es ideal para preparar café de especialidad con precisión",
-        "precio": 155.0
+        "descripcion": "MEDIDA: 17.5 X 160CM\n\nPESO: 100g\n\nMATERIAL: Policarbonato",
+        "precio": 20.0
     },
     {
-        "id": "K-DISPEN-JARRA-MED-360ML",
-        "titulo": "JARRA LECHERA CON MEDIDAS DE 12OZ",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-JARRA-MED-360ML-2.jpg",
+        "id": "K-CAT-INS-PC-RANU-1/6",
+        "titulo": "TAPADERA RANURADA DE 1/6",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2037831-removebg-preview.png",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
         },
-        "descripcion": "CAPACIDAD: 360ml / 12OZ\n\nMATERIAL: Acero inoxidable 201",
-        "precio": 79.0
+        "descripcion": "MEDIDAS: 17.6 X 16.2cm\n\nMATERIAL: Policarbonato",
+        "precio": 20.0
     },
     {
-        "id": "K-DISPEN-JARRA-MED-600ML",
-        "titulo": "JARRA LECHERA CON MEDIDAS DE 20OZ",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/51Fdb70omeL._AC_UF10001000_QL80_-600x605.jpg",
+        "id": "K-CAT-INS-PC-FLIP-1/6",
+        "titulo": "TAPADERA FLIP PARA 1/6",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/61Eh1QwFqeL._AC_UF8941000_QL80_-600x551.jpg",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
         },
-        "descripcion": "CAPACIDAD: 600ml / 20OZ\n\nPESO: 211g\n\nMATERIAL: Acero inoxidable 201",
-        "precio": 99.0
+        "descripcion": "MEDIDAS: 17.6 x 16.2cm\n\nMATERIAL: Policarbonato",
+        "precio": 30.0
     },
     {
-        "id": "K-DISPEN-JARRA-MED-1000ML",
-        "titulo": "JARRA LECHERA CON MEDIDAS DE 34OZ",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-JARRA-MED-1000ML-1.webp",
+        "id": "K-CAT-INS-PC-1/6-6.5CM",
+        "titulo": "INSERTO 1/6 DE 6.5CMS",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-6cm-600x600.jpg",
         "categoria": {
-            "id": "CAFÉ_Y_TE",
-            "nombre": "CAFÉ Y TÉ"
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
         },
         "subcategoria": {
-            "id": "JARRAS",
-            "nombre": "JARRAS"
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
         },
-        "descripcion": "CAPACIDAD: 1000ml / 32OZ\n\nMATERIAL: Acero inoxidable 201",
-        "precio": 119.0
+        "descripcion": "MEDIDA: 17.5 X 163 X 6.5CM\n\nPESO: 150g\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Policarbonato",
+        "precio": 27.0
+    },
+    {
+        "id": "K-CAT-INS-PC-1/6-10CM",
+        "titulo": "INSERTO 1/6 DE 10CMS",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-4p-1-600x600.jpg",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+        },
+        "descripcion": "MEDIDA: 17.5 X 163 X 10CM\n\nPESO: 190g\n\nCAPACIDAD: 1.5 litros\n\nMATERIAL: Policarbonato",
+        "precio": 33.0
+    },
+    {
+        "id": "K-CAT-INS-PC-1/6-15CM",
+        "titulo": "INSERTO 1/6 DE 15CMS",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-15cm-600x600.jpg",
+        "categoria": {
+            "id": "INSERTOS",
+            "nombre": "INSERTOS"
+        },
+        "subcategoria": {
+            "id": "INSERTOS_DE_POLICARBONATO_1/6",
+            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+        },
+        "descripcion": "MEDIDA: 17.5 X 163 X 15CM\n\nPESO: 240g\n\nCAPACIDAD: 2.2 litros\n\nMATERIAL: Policarbonato",
+        "precio": 39.0
+    },
+    {
+        "id": "K-LIMP-SPRAY-AZUL",
+        "titulo": "ATOMIZADOR AZUL DE 750ML",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/images-1-6.jpeg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "ATOMIZADORES",
+            "nombre": "ATOMIZADORES"
+        },
+        "descripcion": "CAPACIDAD: 750ml",
+        "precio": 20.0
+    },
+    {
+        "id": "K-LIMP-SPRAY-ROJO",
+        "titulo": "ATOMIZADOR ROJO DE 750ML",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2568046-300x300.jpg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "ATOMIZADORES",
+            "nombre": "ATOMIZADORES"
+        },
+        "descripcion": "CAPACIDAD: 750ml",
+        "precio": 20.0
+    },
+    {
+        "id": "K-LIMP-TRASH-SLIM-30L",
+        "titulo": "BASURERO SLIM CON TAPA DE 30L",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/51oR6WNHXL-600x600.jpg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "BASUREROS",
+            "nombre": "BASUREROS"
+        },
+        "descripcion": "CAPACIDAD: 30lt / 8 galones\n\nMATERIAL: Plástico",
+        "precio": 125.0
+    },
+    {
+        "id": "K-LIMP-TRASH-SLIM-65L",
+        "titulo": "BASURERO SLIM CON TAPA DE 65L",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/2149300.webp",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "BASUREROS",
+            "nombre": "BASUREROS"
+        },
+        "descripcion": "CAPACIDAD: 65lt / 17 galones\n\nMATERIAL: Plástico",
+        "precio": 195.0
+    },
+    {
+        "id": "K-LIMP-TRASH-SLIM-90L",
+        "titulo": "BASURERO SLIM CON TAPA DE 90L",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/2149300.webp",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "BASUREROS",
+            "nombre": "BASUREROS"
+        },
+        "descripcion": "CAPACIDAD: 90lt / 24 galones\n\nMATERIAL: Plástico",
+        "precio": 225.0
+    },
+    {
+        "id": "K-LIMP-CUBETA-3QT-AMA",
+        "titulo": "CUBETA AMARILLA DE 3QT",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-600x588.jpeg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "CUBETAS",
+            "nombre": "CUBETAS"
+        },
+        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Amarillo\n\nMATERIAL: Poliestireno",
+        "precio": 30.0
+    },
+    {
+        "id": "K-LIMP-CUBETA-3QT-RED",
+        "titulo": "CUBETA ROJA DE 3QT",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-2-600x588.jpeg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "CUBETAS",
+            "nombre": "CUBETAS"
+        },
+        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Roja\n\nMATERIAL: Poliestireno",
+        "precio": 30.0
+    },
+    {
+        "id": "CUBETA VERDE DE 3QT",
+        "titulo": "CUBETA VERDE DE 3QT",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-09-at-1.28.49-PM-1-1-600x588.jpeg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "CUBETAS",
+            "nombre": "CUBETAS"
+        },
+        "descripcion": "CAPACIDAD: 3QT / 2.5L\n\nCOLOR: Verde\n\nMATERIAL: Poliestireno",
+        "precio": 30.0
+    },
+    {
+        "id": "K-LIMP-CUBETA-32L",
+        "titulo": "CUBETA CON ESCURRIDOR DE 32LT",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2534801.jpg",
+        "categoria": {
+            "id": "LIMPIEZA",
+            "nombre": "LIMPIEZA"
+        },
+        "subcategoria": {
+            "id": "CUBETAS",
+            "nombre": "CUBETAS"
+        },
+        "descripcion": "CAPACIDAD: 32lt",
+        "precio": 650.0
     },
     {
         "id": "K-LIMP-MOPA-KIT",
@@ -2370,66 +3240,6 @@ export const productos = [
         "precio": 179.0
     },
     {
-        "id": "K-LIFE-TABLE-81031",
-        "titulo": "MESA COCTELERA PLEGABLE DE 33″ MARCA LIFETIME",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/08/81031-1.webp",
-        "categoria": {
-            "id": "MESAS_Y_SILLAS_LIFETIME",
-            "nombre": "MESAS Y SILLAS LIFETIME"
-        },
-        "subcategoria": {
-            "id": "MESA",
-            "nombre": "MESA COCTELERA PLEGABLE DE 33″ MARCA LIFETIME"
-        },
-        "descripcion": "",
-        "precio": 375.0
-    },
-    {
-        "id": "K-LIFE-TABLE-80471",
-        "titulo": "MESA RECTANGULAR DE 6 PIES PLEGABLE MARCA LIFETIME",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/80471-3.webp",
-        "categoria": {
-            "id": "MESAS_Y_SILLAS_LIFETIME",
-            "nombre": "MESAS Y SILLAS LIFETIME"
-        },
-        "subcategoria": {
-            "id": "MESA",
-            "nombre": "MESA RECTANGULAR DE 6 PIES PLEGABLE MARCA LIFETIME"
-        },
-        "descripcion": "",
-        "precio": 549.0
-    },
-    {
-        "id": "K-LIFE-TABLE-80679",
-        "titulo": "MESA RECTANGULAR DE 6 PIES SÓLIDA MARCA LIFETIME",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/80679-3-1.webp",
-        "categoria": {
-            "id": "MESAS_Y_SILLAS_LIFETIME",
-            "nombre": "MESAS Y SILLAS LIFETIME"
-        },
-        "subcategoria": {
-            "id": "MESA",
-            "nombre": "MESA RECTANGULAR DE 6 PIES SÓLIDA MARCA LIFETIME"
-        },
-        "descripcion": "",
-        "precio": 499.0
-    },
-    {
-        "id": "K-LIFE-TABLE-81089",
-        "titulo": "MESA RECTANGULAR DE 8 PIES SÓLIDA MARCA LIFETIME",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/02/81089.webp",
-        "categoria": {
-            "id": "MESAS_Y_SILLAS_LIFETIME",
-            "nombre": "MESAS Y SILLAS LIFETIME"
-        },
-        "subcategoria": {
-            "id": "MESA",
-            "nombre": "MESA RECTANGULAR DE 8 PIES SÓLIDA MARCA LIFETIME"
-        },
-        "descripcion": "",
-        "precio": 750.0
-    },
-    {
         "id": "K-LIMP-CADDY",
         "titulo": "CADDY DE ACCESORIOS",
         "imagen": "https://kossino.com/wp-content/uploads/2023/12/RWT0467-3-LR-600x600.webp",
@@ -2443,246 +3253,6 @@ export const productos = [
         },
         "descripcion": "MATERIAL: Plástico",
         "precio": 99.0
-    },
-    {
-        "id": "K-VAS-VID-MILK-1LT",
-        "titulo": "PICHEL LECHERO DE 1LT",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/04/3830-600x600.jpg",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "MATERIAL: Vidrio\n\nCAPACIDAD: 1000ml / 32oz",
-        "precio": 19.0
-    },
-    {
-        "id": "K-DISPEN-PICHEL-VID-1.3L",
-        "titulo": "PICHEL DE VIDRIO DE 1.3LTS",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/07/319349896.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "MEDIDAS: 11.2cm X 9.5CM X 21.2CM\n\nCAPACIDAD: 1300ML / 43 onzas\n\nMATERIAL: Vidrio",
-        "precio": 25.0
-    },
-    {
-        "id": "K-DISPEN-PICHEL-VID-YZH36-1.7",
-        "titulo": "PICHEL DE VIDRIO DE 1.7LTS",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/04/a6ac108af340cf61afc21919b53a5f352b950fce20b711e2d97fdb2e5a4c306e-600x600.jpeg",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "MEDIDAS: 26×10.2cm\n\nCAPACIDAD: 1700ML / 56 onzas\n\nMATERIAL: Vidrio",
-        "precio": 29.0
-    },
-    {
-        "id": "K-DISPEN-PICHEL-SAN-14L",
-        "titulo": "PICHEL DE 1.4L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/105886.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "CAPACIDAD: 1.4 litros\n\nMEDIDAS: 11.7 X 20CM\n\nMATERIAL: Acrílico (SAN)",
-        "precio": 34.0
-    },
-    {
-        "id": "K-DISPEN-PICHEL-SAN-18L",
-        "titulo": "PICHEL DE 1.8L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/5540-07.jpg",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "CAPACIDAD: 1.8 litros\n\nMEDIDAS: 13 X 20CM\n\nMATERIAL: Acrílico (SAN)",
-        "precio": 37.0
-    },
-    {
-        "id": "K-DISPEN-PICHEL-SAN-72OZ",
-        "titulo": "PICHEL DE 2.2L",
-        "imagen": "https://kossino.com/wp-content/uploads/2024/04/5540-07.jpg",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "PICHELES",
-            "nombre": "PICHELES"
-        },
-        "descripcion": "CAPACIDAD: 72oz / 2.2 litros\n\nMATERIAL: Acrílico (SAN)",
-        "precio": 39.0
-    },
-    {
-        "id": "K-DISPEN-REFRES-PP-3.5L",
-        "titulo": "REFRESQUERA SIMPLE DE 3.5L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/07/49cf0af4-d38d-4fdb-a9f1-36818e982564.8d52808c9588162e8d85aee16f5a2263-600x600.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "REFRESQUERAS",
-            "nombre": "REFRESQUERAS"
-        },
-        "descripcion": "MEDIDAS: 25.5 X 17 X 10.5cm\n\nCAPACIDAD: 3.5 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
-        "precio": 49.0
-    },
-    {
-        "id": "K-DISPEN-REFRES-PP-11L",
-        "titulo": "REFRESQUERA SIMPLE DE 11L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/2320244-e1677006774336.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "REFRESQUERAS",
-            "nombre": "REFRESQUERAS"
-        },
-        "descripcion": "MEDIDAS: 42.5 X 21 X 54.5CM\n\nCAPACIDAD: 11 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
-        "precio": 379.0
-    },
-    {
-        "id": "K-DISPEN-REFRES-PP-19L",
-        "titulo": "REFRESQUERA SIMPLE DE 19L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1534974.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "REFRESQUERAS",
-            "nombre": "REFRESQUERAS"
-        },
-        "descripcion": "MEDIDAS: 35 X 28 X 57CM\n\nCAPACIDAD: 19 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
-        "precio": 449.0
-    },
-    {
-        "id": "K-DISPEN-REFRES-PP-22L",
-        "titulo": "REFRESQUERA DOBLE DE 22L",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1535001-600x600.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "REFRESQUERAS",
-            "nombre": "REFRESQUERAS"
-        },
-        "descripcion": "MEDIDAS: 42 X 43 X 54CM\n\nCAPACIDAD: 22 litros\n\nMATERIAL: Plástico\n\n*NO ELÉCTRICO",
-        "precio": 729.0
-    },
-    {
-        "id": "K-DISPEN-REFRES-PP-CHORRO",
-        "titulo": "CHORRO DE REPUESTO",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/04/K-DISPEN-REFRES-PP-CHORRO.webp",
-        "categoria": {
-            "id": "DISPENSADORES",
-            "nombre": "DISPENSADORES"
-        },
-        "subcategoria": {
-            "id": "REFRESQUERAS",
-            "nombre": "REFRESQUERAS"
-        },
-        "descripcion": "MATERIAL: Plástico",
-        "precio": 43.0
-    },
-    {
-        "id": "K-DES-SEG-NITRILO-L",
-        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA L COLOR NEGRO",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "SEGURIDAD",
-            "nombre": "SEGURIDAD"
-        },
-        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
-        "precio": 60.0
-    },
-    {
-        "id": "K-DES-SEG-NITRILO-L",
-        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA M COLOR NEGRO",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "SEGURIDAD",
-            "nombre": "SEGURIDAD"
-        },
-        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
-        "precio": 60.0
-    },
-    {
-        "id": "K-DES-SEG-NITRILO-L",
-        "titulo": "CAJA DE 100 GUANTES DE NITRILO TALLA S COLOR NEGRO",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2818321.webp",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "SEGURIDAD",
-            "nombre": "SEGURIDAD"
-        },
-        "descripcion": "El guante de nitrilo talla L color negro ofrece una barrera eficaz contra químicos, aceites y contaminantes, combinando resistencia, comodidad y tacto sensible",
-        "precio": 60.0
-    },
-    {
-        "id": "K-DES-SEG-GUANTE-PP",
-        "titulo": "100 GUANTES PLÁSTICO PARA ALIMENTOS",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2659701.webp",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "SEGURIDAD",
-            "nombre": "SEGURIDAD"
-        },
-        "descripcion": "Los guantes plásticos desechables para alimentos son la opción ideal para mantener la higiene y seguridad en manipulación de alimentos en cocinas, restaurantes, supermercados y servicios de catering",
-        "precio": 7.0
-    },
-    {
-        "id": "K-DES-SEG-HAIR-COFIA",
-        "titulo": "100 COFIAS ELÁSTICAS DESECHABLES",
-        "imagen": "https://kossino.com/wp-content/uploads/2025/05/728910.webp",
-        "categoria": {
-            "id": "DESECHABLES_Y_CONSUMIBLES",
-            "nombre": "DESECHABLES Y CONSUMIBLES"
-        },
-        "subcategoria": {
-            "id": "SEGURIDAD",
-            "nombre": "SEGURIDAD"
-        },
-        "descripcion": "La cofia elástica desechable es un accesorio indispensable para mantener la higiene en ambientes médicos, de alimentos y limpieza.",
-        "precio": 30.0
     },
     {
         "id": "K-LIMP-STAND-MOJADO",
@@ -2700,6 +3270,66 @@ export const productos = [
         "precio": 75.0
     },
     {
+        "id": "K-LIFE-TABLE-81031",
+        "titulo": "MESA COCTELERA PLEGABLE DE 33″ MARCA LIFETIME",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/08/81031-1.webp",
+        "categoria": {
+            "id": "MESAS_Y_SILLAS_LIFETIME",
+            "nombre": "MESAS Y SILLAS LIFETIME"
+        },
+        "subcategoria": {
+            "id": "MESA",
+            "nombre": "MESA COCTELERA PLEGABLE DE 33″ MARCA LIFETIME"
+        },
+        "descripcion": "Altura estándar de coctelera (110 cm)\nDiámetro de 33 pulgadas (84 cm)\nDiseño plegable\nMarca Lifetime",
+        "precio": 375.0
+    },
+    {
+        "id": "K-LIFE-TABLE-80471",
+        "titulo": "MESA RECTANGULAR DE 6 PIES PLEGABLE MARCA LIFETIME",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/80471-3.webp",
+        "categoria": {
+            "id": "MESAS_Y_SILLAS_LIFETIME",
+            "nombre": "MESAS Y SILLAS LIFETIME"
+        },
+        "subcategoria": {
+            "id": "MESA",
+            "nombre": "MESA RECTANGULAR DE 6 PIES PLEGABLE MARCA LIFETIME"
+        },
+        "descripcion": "DIMENSIONES: 183 x 76 x 73.5cm\n\nLargo de 6 pies (183 cm)\nMarca Lifetime\nSuperficie resistente\nDiseño plegable\nUso en interiores y exteriores",
+        "precio": 549.0
+    },
+    {
+        "id": "K-LIFE-TABLE-80679",
+        "titulo": "MESA RECTANGULAR DE 6 PIES SÓLIDA MARCA LIFETIME",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/80679-3-1.webp",
+        "categoria": {
+            "id": "MESAS_Y_SILLAS_LIFETIME",
+            "nombre": "MESAS Y SILLAS LIFETIME"
+        },
+        "subcategoria": {
+            "id": "MESA",
+            "nombre": "MESA RECTANGULAR DE 6 PIES SÓLIDA MARCA LIFETIME"
+        },
+        "descripcion": "DIMENSIONES: 183 x 76 x 73.5cm\n\nMarca Lifetime\nSuperficie sólida y resistente\nUso en interiores y exteriores\nDiseño robusto",
+        "precio": 499.0
+    },
+    {
+        "id": "K-LIFE-TABLE-81089",
+        "titulo": "MESA RECTANGULAR DE 8 PIES SÓLIDA MARCA LIFETIME",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/02/81089.webp",
+        "categoria": {
+            "id": "MESAS_Y_SILLAS_LIFETIME",
+            "nombre": "MESAS Y SILLAS LIFETIME"
+        },
+        "subcategoria": {
+            "id": "MESA",
+            "nombre": "MESA RECTANGULAR DE 8 PIES SÓLIDA MARCA LIFETIME"
+        },
+        "descripcion": "DIMENSIONES: 243 x 76 x 73.5cm\n\nLargo de 8 pies (244 cm)\nMarca Lifetime\nMaterial sólido\nUso en interiores y exteriores\nDiseño práctico",
+        "precio": 750.0
+    },
+    {
         "id": "K-LIFE-SILLA-80739",
         "titulo": "SILLA PLEGABLE MARCA LIFETIME",
         "imagen": "https://kossino.com/wp-content/uploads/2025/01/80739-1-1-600x600.jpg",
@@ -2711,7 +3341,7 @@ export const productos = [
             "id": "SILLA",
             "nombre": "SILLA PLEGABLE MARCA LIFETIME"
         },
-        "descripcion": "",
+        "descripcion": "PESO: 9.2lb\nDIMENSIONES: 55.5 x 48.6 x 83.7cm\n\nDiseño plegable y ligero\nMarca Lifetime\nEstructura de acero resistente\nAsiento y respaldo de polietileno",
         "precio": 275.0
     },
     {
@@ -2726,127 +3356,202 @@ export const productos = [
             "id": "MESA",
             "nombre": "TABLERO REDONDO DE 60″ MARCA LIFETIME"
         },
-        "descripcion": "",
+        "descripcion": "DIMENSIONES: 152.4 x 73.7cm\n\nMarca Lifetime\nMaterial resistente\nUso en interiores y exteriores\nDiseño práctico",
         "precio": 999.0
     },
     {
-        "id": "K-CAT-INS-PC-LID-1/4",
-        "titulo": "TAPADERA PARA INSERTO 1/4",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-4-600x600.jpg",
+        "id": "K-VAJ-BAJAPLATO-W02",
+        "titulo": "BAJA PLATOS PLASTICO BLANCO CLASICO DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-BLANCO-CLASICO-DE-33CM.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/4",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/4"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDA: 26.5 X 16CM\n\nPESO: 100g\n\nMATERIAL: Policarbonato",
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
         "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-RANU-1/4",
-        "titulo": "TAPADERA RANURADA PARA 1/4",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2581132.jpg",
+        "id": "K-VAJ-BAJAPLATO-W04",
+        "titulo": "BAJA PLATOS PLASTICO BLANCO ELEGANTE DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA_PLATO_PLASTICO_BLANCO_ELEGANTE_DE_33CM_1-removebg-preview.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/4",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/4"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDAS: 26.5 X 16.2cm\n\nMATERIAL: Policarbonato",
-        "precio": 30.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-LID-1/6",
-        "titulo": "TAPADERA PARA INSERTO 1/6",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-600x600.jpg",
+        "id": "K-VAJ-BAJAPLATO-W03",
+        "titulo": "BAJA PLATOS PLASTICO BLANCO FLORAL DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-BLANCO-FLORAL-DE-33CM-600x600.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDA: 17.5 X 160CM\n\nPESO: 100g\n\nMATERIAL: Policarbonato",
-        "precio": 20.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-RANU-1/6",
-        "titulo": "TAPADERA RANURADA DE 1/6",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/2037831-removebg-preview.png",
+        "id": "K-VAJ-BAJAPLATO-W01",
+        "titulo": "BAJA PLATOS PLASTICO BLANCO VINTAGE DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-10-06_at_8.49.19_AM-removebg-preview.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDAS: 17.6 X 16.2cm\n\nMATERIAL: Policarbonato",
-        "precio": 20.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-FLIP-1/6",
-        "titulo": "TAPADERA FLIP PARA 1/6",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/12/61Eh1QwFqeL._AC_UF8941000_QL80_-600x551.jpg",
+        "id": "K-VAJ-BAJAPLATO-C01",
+        "titulo": "BAJA PLATOS PLASTICO CAFE CAMPESTRE DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.11.02_AM-removebg-preview.png",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDAS: 17.6 x 16.2cm\n\nMATERIAL: Policarbonato",
-        "precio": 30.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-1/6-6.5CM",
-        "titulo": "INSERTO 1/6 DE 6.5CMS",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-6cm-600x600.jpg",
+        "id": "K-VAJ-BAJAPLATO-G42/2",
+        "titulo": "BAJA PLATOS PLASTICO VERDE COLONIAL DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.48_AM-removebg-preview.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDA: 17.5 X 163 X 6.5CM\n\nPESO: 150g\n\nCAPACIDAD: 1.0 litros\n\nMATERIAL: Policarbonato",
-        "precio": 27.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-1/6-10CM",
-        "titulo": "INSERTO 1/6 DE 10CMS",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-4p-1-600x600.jpg",
+        "id": "K-VAJ-BAJAPLATO-N02",
+        "titulo": "BAJA PLATOS PLASTICO DORADO NATIVIDAD DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.47_AM__1_-removebg-preview.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDA: 17.5 X 163 X 10CM\n\nPESO: 190g\n\nCAPACIDAD: 1.5 litros\n\nMATERIAL: Policarbonato",
-        "precio": 33.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     },
     {
-        "id": "K-CAT-INS-PC-1/6-15CM",
-        "titulo": "INSERTO 1/6 DE 15CMS",
-        "imagen": "https://kossino.com/wp-content/uploads/2023/01/1-6-15cm-600x600.jpg",
+        "id": "K-VAJ-BAJAPLATO-N03",
+        "titulo": "BAJA PLATOS PLASTICO ROJO NATIVIDAD DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.18.55_AM-removebg-preview.webp",
         "categoria": {
-            "id": "INSERTOS",
-            "nombre": "INSERTOS"
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
         },
         "subcategoria": {
-            "id": "INSERTOS_DE_POLICARBONATO_1/6",
-            "nombre": "TAPADERA INSERTOS DE POLICARBONATO 1/6"
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
         },
-        "descripcion": "MEDIDA: 17.5 X 163 X 15CM\n\nPESO: 240g\n\nCAPACIDAD: 2.2 litros\n\nMATERIAL: Policarbonato",
-        "precio": 39.0
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
+    },
+    {
+        "id": "K-VAJ-BAJAPLATO-N01",
+        "titulo": "BAJA PLATOS PLASTICO PLATEADO NATIVIDAD DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.18.56_AM-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
+        },
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
+    },
+    {
+        "id": "K-VAJ-BAJAPLATO-F18",
+        "titulo": "BAJA PLATOS PLASTICO TRANSPARENTE PUNTOS DORADOS DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/baja-plato-transparente-puntos-dorados.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
+        },
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
+    },
+    {
+        "id": "K-VAJ-BAJAPLATO-F54/2",
+        "titulo": "BAJA PLATOS PLASTICO DORADO SOL DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/02_105935797_SI_11-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
+        },
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
+    },
+    {
+        "id": "K-VAJ-BAJAPLATO-B01",
+        "titulo": "BAJA PLATOS PLASTICO NEGRO ELEGANTE DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/WhatsApp_Image_2025-09-24_at_9.09.47_AM-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
+        },
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
+    },
+    {
+        "id": "K-VAJ-BAJAPLATO-G41",
+        "titulo": "BAJA PLATOS PLASTICO PLATEADO LUNAR DE 33 CM",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/BAJA-PLATO-PLASTICO-PLATEADO-LUNAR-DE-33CM.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "BAJA_PLATOS",
+            "nombre": "BAJA PLATOS"
+        },
+        "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
+        "precio": 25.0
     }
 ]
