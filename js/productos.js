@@ -1,3 +1,8 @@
+// rompecabezas-v2.js
+// Generado automáticamente el 2025-11-17 a las 04:12
+// Fuente: GuateCocina-v2.csv
+// Total productos: 255
+
 export const productos = [
     {
         "id": "K-CAT-CHAF-DLX-RA2301A",
@@ -3553,5 +3558,275 @@ export const productos = [
         },
         "descripcion": "Diámetro de 33 cm\nMaterial plástico resistente",
         "precio": 25.0
+    },
+    {
+        "id": "K-BAR-MIXER-2L-VERDE",
+        "titulo": "BOTELLA MIXER VERDE DE 2L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0496G-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 35CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 45.0
+    },
+    {
+        "id": "K-BAR-MIXER-2.5L-AMA",
+        "titulo": "BOTELLA MIXER AMARILLA DE 2.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2023/01/RWT0497Y-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 38CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 49.0
+    },
+    {
+        "id": "K-BAR-MIXER-2.5L-NAR",
+        "titulo": "BOTELLA MIXER NARANJA DE 2.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0497T-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 38CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 49.0
+    },
+    {
+        "id": "K-BAR-MIXER-2.5L-ROJO",
+        "titulo": "BOTELLA MIXER ROJA DE 2.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0497R-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 38CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 49.0
+    },
+    {
+        "id": "K-BAR-MIXER-2.5L-VERDE",
+        "titulo": "BOTELLA MIXER VERDE DE 2.5L",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/11/RWT0497G-1-LR-600x600.webp",
+        "categoria": {
+            "id": "BAR",
+            "nombre": "BAR"
+        },
+        "subcategoria": {
+            "id": "ACCESORIOS_PARA_BARRA",
+            "nombre": "ACCESORIOS PARA BARRA"
+        },
+        "descripcion": "ALTURA: 38CM\n\nCAPACIDAD: 2.0 litros\n\nMATERIAL: Plastico y poliestireno",
+        "precio": 49.0
+    },
+    {
+        "id": "K-DISPEN-TEA-POR-750",
+        "titulo": "TETERA DE PORCELANA DE 24OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/04/DSCF6394.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "CAFETERAS_Y_TETERAS",
+            "nombre": "CAFETERAS Y TETERAS"
+        },
+        "descripcion": "CAPACIDAD: 24oz / 750ml\n\nMATERIAL: Porcelana",
+        "precio": 79.0
+    },
+    {
+        "id": "K-DISPEN-TEA-SS-12OZ",
+        "titulo": "TETERA DE ACERO INOX. DE 12OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/1.5L-48.0fl-oz-Stainless-Steel-Tea-Pot-M11057-600x600-1.jpg",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "CAFETERAS_Y_TETERAS",
+            "nombre": "CAFETERAS Y TETERAS"
+        },
+        "descripcion": "CAPACIDAD: 12oz\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 55.0
+    },
+    {
+        "id": "K-DISPEN-TEA-SS-20OZ",
+        "titulo": "TETERA DE ACERO INOX. DE 20OZ",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/1.5L-48.0fl-oz-Stainless-Steel-Tea-Pot-M11057-600x600-1.jpg",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "CAFETERAS_Y_TETERAS",
+            "nombre": "CAFETERAS Y TETERAS"
+        },
+        "descripcion": "CAPACIDAD: 20oz\n\nMATERIAL: Acero inoxidable 201",
+        "precio": 69.0
+    },
+    {
+        "id": "K-DISPEN-TEA-VID-1050",
+        "titulo": "TETERA DE VIDRIO DE 1.05LTS (AGOTADO)",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/thermo-glass-tea-pot-32-fl-oz-high-temperature-and-shock-resistant-by-wilmax-porcelain-907633-600x600.jpg",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "CAFETERAS_Y_TETERAS",
+            "nombre": "CAFETERAS Y TETERAS"
+        },
+        "descripcion": "CAPACIDAD: 1.05 litros\n\nMATERIAL: Borosilicato",
+        "precio": 69.0
+    },
+    {
+        "id": "K-DISPEN-TEA-VID-1900",
+        "titulo": "TETERA DE VIDRIO DE 1.9LTS",
+        "imagen": "https://kossino.com/wp-content/uploads/2024/01/teakettle1200_95c60408-08cb-4d90-981b-e8edbaa5c1ad_1200x1200_crop_center-600x600.webp",
+        "categoria": {
+            "id": "DISPENSADORES",
+            "nombre": "DISPENSADORES"
+        },
+        "subcategoria": {
+            "id": "CAFETERAS_Y_TETERAS",
+            "nombre": "CAFETERAS Y TETERAS"
+        },
+        "descripcion": "CAPACIDAD: 1.05 litros\n\nMATERIAL: Borosilicato",
+        "precio": 89.0
+    },
+    {
+        "id": "K-VAJ-ALTER-SALAD-7",
+        "titulo": "Bowl plano 7″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/ae3534b3b6b05dd7970490384ab3f036-600x600.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 7″ / 17.75cm",
+        "precio": 45.0
+    },
+    {
+        "id": "K-VAJ-ALTER-SALAD-9",
+        "titulo": "Bowl plano 9″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/ae3534b3b6b05dd7970490384ab3f036.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 9″ / 22.8cm",
+        "precio": 59.0
+    },
+    {
+        "id": "K-VAJ-ALTER-SLOP-8",
+        "titulo": "Bowl Inclinado 8″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/8_inch_Low_Sloping_Bowl-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 8″ / 20.3cm",
+        "precio": 59.0
+    },
+    {
+        "id": "K-VAJ-ALTER-PLANO-7.5",
+        "titulo": "Plato plano 7.5″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/Round_plate_Detailed_photo_.2-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 7.5″ / 19cm",
+        "precio": 39.0
+    },
+    {
+        "id": "K-VAJ-ALTER-PLANO-10",
+        "titulo": "Plato plano 10″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/Round_plate_Detailed_photo_.2-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 10″ / 25cm",
+        "precio": 59.0
+    },
+    {
+        "id": "K-VAJ-ALTER-PASTA-11",
+        "titulo": "Plato tipo sombrero 11″ Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/05/2531424.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana\n\nMEDIDAS: 11″ / 28cm",
+        "precio": 79.0
+    },
+    {
+        "id": "K-VAJ-ALTER-SAL/PIM-3",
+        "titulo": "Salero/Pimentero de porcelana (3 orificios) Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/Three_Hole_Salt___Pepper_Shaker-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana",
+        "precio": 19.0
+    },
+    {
+        "id": "K-VAJ-ALTER-SAL/PIM-5",
+        "titulo": "Salero/Pimentero de porcelana (5 orificios) Línea ALTER",
+        "imagen": "https://kossino.com/wp-content/uploads/2025/09/Five-hole_salt_and_pepper_shakers.2-removebg-preview.webp",
+        "categoria": {
+            "id": "SOBREMESA",
+            "nombre": "SOBREMESA"
+        },
+        "subcategoria": {
+            "id": "VAJILLA_ALTER",
+            "nombre": "VAJILLA ALTER"
+        },
+        "descripcion": "MATERIAL: Porcelana",
+        "precio": 20.0
     }
-]
+];
