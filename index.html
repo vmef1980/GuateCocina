@@ -1,21 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-GT">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#F47C20" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>🛒 GuateCocina | Todo para tu cocina al mejor precio | Envíos a todo Guatemala</title>
-  <meta name="description" content="Más de 500 productos para tu cocina ✓ Precios directos de fábrica ✓ Envíos a toda Guatemala ✓ Paga contra entrega o transferencia">
 
+  <!-- SEO COPIADO Y ADAPTADO DE KOSSINO.COM (optimizado para Guatemala) -->
+  <title> 🛒GuateCocina | Equipo de Cocina Profesional | Utensilios para Restaurantes y Hoteles en Guatemala</title>
+  <meta name="description" content="Descubre utensilios y equipo de cocina profesional para restaurantes, hoteles, banquetes, bar, café y té, insertos, desechables y consumibles. Calidad, precios directos de fábrica y envíos a todo Guatemala en GuateCocina.">
+
+  <!-- Open Graph (adaptado de Kossino: simple y efectivo para shares) -->
+  <meta property="og:title" content="GuateCocina | Equipo de Cocina Profesional en Guatemala">
+  <meta property="og:description" content="Utensilios industriales para restaurantes y hoteles. Envíos a todo el país.">
+  <meta property="og:image" content="https://guatecocina.rompecabezas.online/img/og-image.jpg">
+  <meta property="og:url" content="https://guatecocina.rompecabezas.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+
+  <!-- Twitter Cards (similar a Kossino) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GuateCocina | Utensilios Profesionales Guatemala">
+  <meta name="twitter:description" content="Equipo para cocina industrial al mejor precio.">
+  <meta name="twitter:image" content="https://guatecocina.rompecabezas.online/img/og-image.jpg">
+
+  <link rel="canonical" href="https://guatecocina.rompecabezas.online/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
   <link rel="icon" href="img/GuateCocina.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/GuateCocina.ico">
 
-  <link rel="icon" sizes="192x192" href="img/GuateCocina.ico">
-  
+  <!-- Schema.org (mejorado vs. Kossino – agregué más detalles locales) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store","LocalBusiness"],
+    "name": "GuateCocina",
+    "image": "https://guatecocina.rompecabezas.online/img/GuateCocina_LogoConNombre-PNGtoICO.png",
+    "telephone": "+50241084481",
+    "url": "https://guatecocina.rompecabezas.online",
+    "description": "Equipo de cocina profesional para restaurantes, hoteles y banquetes en Guatemala. Utensilios industriales de calidad.",
+    "address": {"@type": "PostalAddress", "addressCountry": "GT", "addressRegion": "Guatemala"},
+    "priceRange": "Q",
+    "openingHours": "Mo-Su 08:00-18:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+50241084481",
+      "contactType": "Ventas",
+      "areaServed": "GT"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --primary: #F47C20;
@@ -58,7 +95,7 @@
     #toggle-menu:hover { transform: scale(1.1); }
 
     .wrapper { display: flex; min-height: 100vh; }
-    aside { position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-right: 1px solid var(--border); box-shadow: var(--shadow); transition: left 0.4s ease; z-index: 1000; display: flex; flex-direction: column; }
+    aside { position: fixed; top: 0; left: -300px; width: 300px; height: 100vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-right: 1px solid var(--border); box-shadow: var(--shadow); transition: left 0.4s ease; z-index: 1000; display: flex; flex-direction: column; }
     aside.abierto { left: 0; }
 
     aside header { padding: 2rem 1.5rem 1rem; text-align: center; border-bottom: 1px solid var(--border); }
@@ -73,15 +110,28 @@
     .boton-categoria:hover { background: var(--primary); color: white; transform: translateY(-2px); }
 
     aside footer { padding: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-soft); border-top: 1px solid var(--border); background: rgba(255,255,255,0.95); }
-    #cerrar-menu { position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; font-size: 1.5rem; cursor: pointer; }
-    #cerrar-menu:hover { color: var(--text-dark); transform: rotate(90deg); }
+    #cerrar-menu { position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark); }
+    #cerrar-menu:hover { color: var(--primary); transform: rotate(90deg); }
 
     main { flex: 1; padding: 2rem 1rem; max-width: 1200px; margin: 0 auto; padding-bottom: 100px; }
 
     #titulo-principal {
-      text-align: center; font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem;
+      text-align: center; 
+      font-size: 2.2rem; 
+      font-weight: 700; 
+      margin-bottom: 1rem;
       background: linear-gradient(135deg, var(--accent), var(--primary));
-      -webkit-background-clip: text; background-clip: text; color: transparent;
+      -webkit-background-clip: text; 
+      background-clip: text; 
+      color: transparent;
+    }
+
+    .subtitle-seo {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 2rem;
     }
 
     #subcategorias { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: 2rem; }
@@ -153,10 +203,8 @@
       #carrito-float, #whatsapp-contacto { width: 56px; height: 56px; font-size: 1.6rem; }
       #carrito-float { bottom: 100px; right: 14px; }
       #whatsapp-contacto { bottom: 166px; right: 14px; }
-      #carrito-float span { width: 22px; height: 22px; font-size: 0.75rem; top: -6px; right: -6px; }
       #boton-volver { left: auto !important; right: 14px !important; bottom: 20px !important; transform: none !important; padding: 0.75rem 1.3rem !important; font-size: 0.95rem !important; }
       #boton-volver i { font-size: 1.3rem !important; }
-
       .modal-contenido { margin: 0 auto; max-width: 96%; max-height: 88vh !important; border-radius: 20px; }
       .modal-grid { grid-template-columns: 1fr !important; gap: 1rem; padding: 1rem 1rem 0.5rem !important; }
       .carrusel { max-height: 340px; }
@@ -180,7 +228,7 @@
   <div class="wrapper">
     <aside>
       <header>
-        <img src="img/GuateCocina_LogoConNombre-PNGtoICO.png" alt="Logo" class="logo" />
+        <img src="img/GuateCocina_LogoConNombre-PNGtoICO.png" alt="Logo GuateCocina" class="logo" />
       </header>
       <nav>
         <input type="text" id="buscar-categoria" placeholder="Buscar categoría...">
@@ -199,7 +247,12 @@
     </aside>
 
     <main>
-      <h2 id="titulo-principal">Todos los productos</h2>
+      <h1 id="titulo-principal">GuateCocina – Equipo de Cocina Profesional</h1>
+      <p class="subtitle-seo">
+        Banquetes, Bar, Café y Té, Insertos, Desechables y Consumibles<br>
+        Precios directos de fábrica • Envíos a toda Guatemala • Pago contra entrega
+      </p>
+
       <section id="subcategorias"></section>
       <section id="contenedor-productos"></section>
     </main>
@@ -271,10 +324,16 @@
     let productoActual = null;
     let indiceActual = 0;
 
-    // Control del menú lateral
+    // Control del menú lateral (ARREGLADO: z-index y height fijos)
     if (localStorage.getItem("menuAbierto") === "true") aside.classList.add("abierto");
-    toggleMenu.onclick = () => { aside.classList.add("abierto"); localStorage.setItem("menuAbierto", "true"); };
-    cerrarMenu.onclick = () => { aside.classList.remove("abierto"); localStorage.setItem("menuAbierto", "false"); };
+    toggleMenu.onclick = () => { 
+      aside.classList.add("abierto"); 
+      localStorage.setItem("menuAbierto", "true"); 
+    };
+    cerrarMenu.onclick = () => { 
+      aside.classList.remove("abierto"); 
+      localStorage.setItem("menuAbierto", "false"); 
+    };
 
     // Búsqueda de categorías
     document.getElementById("buscar-categoria")?.addEventListener("input", e => {
@@ -284,7 +343,7 @@
       });
     });
 
-    // Carga de categorías y productos (igual que antes)
+    // Carga de categorías y productos
     const categorias = [...new Set(productos.map(p => p.categoria.id))];
     categorias.forEach(cat => {
       const btn = document.createElement("button");
@@ -331,7 +390,7 @@
         div.className = "producto";
         div.innerHTML = `
           <div class="imagen-contenedor">
-            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo}" loading="lazy">
+            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo} - GuateCocina Guatemala" loading="lazy">
           </div>
           <div class="contenido">
             <h3>${p.titulo}</h3>

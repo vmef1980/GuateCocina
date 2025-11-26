@@ -1,4 +1,4 @@
-// productos.js - Generado automáticamente el 24/11/2025 19:13
+// productos.js - Generado automáticamente el 26/11/2025 07:40
 // No editar manualmente → se sobrescribe con el script Python
 
 export const productos = [
@@ -40,7 +40,7 @@ export const productos = [
     },
     {
         "id": "K-CAT-CHAF-ECO-WH433B",
-        "titulo": "CHAFER ECONOMICO RECTANGULAR DE 9LTS",
+        "titulo": "CHAFER DELUXE REDONDO DE 6LTS",
         "descripcion": "MATERIAL: Acero inoxidable\n\nCAPACIDAD: 9lts",
         "precio": 450.0,
         "imagen": "https://kossino.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-04-01-at-9.03.01-PM.jpeg",
@@ -2033,7 +2033,8 @@ export const productos = [
             "nombre": "REFRESQUERAS"
         },
         "imagenes": [
-            "https://kossino.com/wp-content/uploads/2023/07/49cf0af4-d38d-4fdb-a9f1-36818e982564.8d52808c9588162e8d85aee16f5a2263-600x600.webp"
+            "https://kossino.com/wp-content/uploads/2023/07/49cf0af4-d38d-4fdb-a9f1-36818e982564.8d52808c9588162e8d85aee16f5a2263-600x600.webp",
+            "https://kossino.com/wp-content/uploads/2023/07/51chrv4j23l-sl1000-500x500-1.webp"
         ]
     },
     {
