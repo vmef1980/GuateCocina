@@ -1,7 +1,4 @@
-// productos.js - Generado automáticamente el 24/11/2025 19:13
-// No editar manualmente → se sobrescribe con el script Python
-
-export const productos = [
+[
     {
         "id": "K-CAT-CHAF-DLX-RA2301A",
         "titulo": "CHAFER DELUXE RECTANGULAR DE 9LTS",
@@ -4592,4 +4589,4 @@ export const productos = [
             "https://kossino.com/wp-content/uploads/2025/09/Five-hole_salt_and_pepper_shakers.2-removebg-preview.webp"
         ]
     }
-];
+]

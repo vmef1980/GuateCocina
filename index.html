@@ -6,28 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#F47C20" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>GuateCocina - Artículos de Cocina</title>
+  <title>🛒 GuateCocina | Todo para tu cocina al mejor precio | Envíos a todo Guatemala</title>
+  <meta name="description" content="Más de 500 productos para tu cocina ✓ Precios directos de fábrica ✓ Envíos a toda Guatemala ✓ Paga contra entrega o transferencia">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-  
-  <!-- Íconos -->
-  <link rel="icon" href="img/GuateCocina_LogoConNombre.png" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="img/GuateCocina_LogoConNombre.png" />
+  <link rel="icon" href="img/GuateCocina.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/GuateCocina.ico">
 
+  <link rel="icon" sizes="192x192" href="img/GuateCocina.ico">
+  
   <style>
     :root {
       --primary: #F47C20;
-      --primary-dark: #00A86F;
+      --primary-dark: #e06b10;
       --accent: #0074B7;
       --highlight: #FFD447;
       --text-dark: #1C3F60;
-      --text-soft: #4CAF5C;
-      --bg: #f8f9fb;
-      --card-bg: rgba(255, 255, 255, 0.95);
-      --text: #2d2d2d;
-      --text-light: #666;
+      --text-soft: #666;
       --border: rgba(0,0,0,0.08);
       --shadow: 0 8px 32px rgba(0,0,0,0.08);
       --radius: 16px;
@@ -42,553 +38,221 @@
       color: var(--text-dark);
       line-height: 1.6;
       min-height: 100vh;
+      -webkit-user-select: none;
+      user-select: none;
     }
 
-    /* ===== HEADER & MENU TOGGLE ===== */
-    #toggle-menu {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      z-index: 1001;
-      background: white;
-      border: none;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      color: var(--accent);
-      box-shadow: var(--shadow);
-      cursor: pointer;
-      transition: var(--transition);
+    input, button, [contenteditable] { -webkit-user-select: text; user-select: text; }
+
+    h1,h2,h3,h4,.producto h3,.descripcion,.descripcion-modal,
+    #modal-titulo,#modal-descripcion,.info-extra p {
+      -webkit-user-select: none !important;
+      user-select: none !important;
+      pointer-events: none;
     }
 
-    #toggle-menu:hover {
-      transform: scale(1.1);
-      box-shadow: 0 12px 40px rgba(0, 116, 183, 0.3);
-    }
+    img { -webkit-user-drag: none; pointer-events: none; -webkit-touch-callout: none; }
+    .carrusel img, .miniaturas img { pointer-events: auto !important; cursor: pointer; }
 
-    /* ===== ASIDE (MENÚ LATERAL) ===== */
+    #toggle-menu { position: fixed; top: 1rem; left: 1rem; z-index: 1001; background: white; border: none; width: 48px; height: 48px; border-radius: 50%; font-size: 1.5rem; color: var(--accent); box-shadow: var(--shadow); cursor: pointer; transition: var(--transition); }
+    #toggle-menu:hover { transform: scale(1.1); }
+
     .wrapper { display: flex; min-height: 100vh; }
-
-    aside {
-      position: fixed;
-      top: 0;
-      left: -300px;
-      width: 300px;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-right: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      transition: left 0.4s ease;
-      z-index: 1000;
-      display: flex;
-      flex-direction: column;
-    }
-
+    aside { position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-right: 1px solid var(--border); box-shadow: var(--shadow); transition: left 0.4s ease; z-index: 1000; display: flex; flex-direction: column; }
     aside.abierto { left: 0; }
 
-    aside header {
-      padding: 2rem 1.5rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    aside .logo {
-      width: 160px;
-      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
-      transition: transform 0.3s ease;
-      border-radius: 20px;
-    }
-
+    aside header { padding: 2rem 1.5rem 1rem; text-align: center; border-bottom: 1px solid var(--border); }
+    aside .logo { width: 200px; height: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); transition: transform 0.3s ease; border-radius: 20px; }
     aside .logo:hover { transform: scale(1.05); }
 
-    /* ==== NAV CON SCROLL Y BUSCADOR ==== */
-    aside nav {
-      flex: 1;
-      padding: 1rem 1rem 0;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
+    aside nav { flex: 1; padding: 1rem; overflow-y: auto; }
+    #buscar-categoria { width: 100%; padding: 0.9rem 1rem; margin-bottom: 1rem; border: 1.5px solid var(--border); border-radius: 12px; font-size: 0.95rem; background: white; transition: var(--transition); }
+    #buscar-categoria:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(244,124,32,0.2); }
 
-    #buscar-categoria {
-      width: 100%;
-      padding: 0.9rem 1rem;
-      margin-bottom: 1rem;
-      border: 1.5px solid var(--border);
-      border-radius: 12px;
-      font-size: 0.95rem;
-      background: white;
-      transition: var(--transition);
-    }
+    .boton-categoria { display: block; width: 100%; padding: 0.9rem 1.2rem; margin-bottom: 0.5rem; background: white; border: none; border-radius: var(--radius); font-weight: 600; color: var(--text-dark); text-align: left; cursor: pointer; transition: var(--transition); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .boton-categoria:hover { background: var(--primary); color: white; transform: translateY(-2px); }
 
-    #buscar-categoria:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(244, 124, 32, 0.2);
-    }
+    aside footer { padding: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-soft); border-top: 1px solid var(--border); background: rgba(255,255,255,0.95); }
+    #cerrar-menu { position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; font-size: 1.5rem; cursor: pointer; }
+    #cerrar-menu:hover { color: var(--text-dark); transform: rotate(90deg); }
 
-    aside nav::-webkit-scrollbar { width: 6px; }
-    aside nav::-webkit-scrollbar-track { background: transparent; }
-    aside nav::-webkit-scrollbar-thumb {
-      background: rgba(0,0,0,0.2);
-      border-radius: 3px;
-    }
-    aside nav::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.4); }
-
-    #menu-categorias { list-style: none; }
-
-    .boton-categoria {
-      display: block;
-      width: 100%;
-      padding: 0.9rem 1.2rem;
-      margin-bottom: 0.5rem;
-      background: var(--card-bg);
-      border: none;
-      border-radius: var(--radius);
-      font-weight: 600;
-      color: var(--text-dark);
-      text-align: left;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      font-size: 0.95rem;
-    }
-
-    .boton-categoria:hover {
-      background: var(--primary);
-      color: white;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(244, 124, 32, 0.3);
-    }
-
-    /* NUEVAS SECCIONES: Datos legales y empresas hermanas */
-    .info-empresa, .empresas-hermanas {
-      padding: 1.2rem 1.5rem;
-      border-top: 1px solid var(--border);
-      background: rgba(248,249,251,0.6);
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-    .info-empresa h4, .empresas-hermanas h4 {
-      color: var(--accent);
-      font-size: 0.95rem;
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-    }
-    .empresas-hermanas img {
-      height: 50px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform .3s;
-    }
-    .empresas-hermanas a:hover img { transform: translateY(-4px); }
-
-    aside footer {
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-soft);
-      border-top: 1px solid var(--border);
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-    }
-
-    aside footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
-
-    #cerrar-menu {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: transparent;
-      border: none;
-      font-size: 1.5rem;
-      color: var(--text-light);
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    #cerrar-menu:hover {
-      color: var(--text-dark);
-      transform: rotate(90deg);
-    }
-
-    /* ===== MAIN CONTENT ===== */
-    main {
-      flex: 1;
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-    }
+    main { flex: 1; padding: 2rem 1rem; max-width: 1200px; margin: 0 auto; padding-bottom: 100px; }
 
     #titulo-principal {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
+      text-align: center; font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem;
       background: linear-gradient(135deg, var(--accent), var(--primary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text; background-clip: text; color: transparent;
     }
 
-    /* ===== SUBCATEGORÍAS (CHIPS) ===== */
-    #subcategorias {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-      padding: 0 1rem;
-    }
+    #subcategorias { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: 2rem; }
+    .boton-subcategoria { background: white; border: 1.5px solid var(--border); color: var(--text-dark); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: var(--transition); }
+    .boton-subcategoria:hover, .boton-subcategoria.activo { background: var(--primary); color: white; border-color: var(--primary); }
 
-    .boton-subcategoria {
-      background: white;
-      border: 1.5px solid var(--border);
-      color: var(--text-dark);
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
+    #contenedor-productos { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; padding: 0 1rem; }
 
-    .boton-subcategoria:hover,
-    .boton-subcategoria.activo {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(244, 124, 32, 0.3);
-    }
+    .producto { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); border: 1px solid var(--border); cursor: pointer; display: flex; flex-direction: column; height: 100%; }
+    .producto:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
 
-    /* ===== PRODUCTOS ===== */
-    #contenedor-productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem;
-      padding: 0 1rem;
-    }
-
-    .producto {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      user-select: none;
-      -webkit-touch-callout: none;
-    }
-
-    .producto:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-    }
-
-    .producto .imagen-contenedor {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      background: white;
-      overflow: hidden;
-      border-bottom: 1px solid var(--border);
-      pointer-events: none;
-    }
-
-    .producto img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-      transition: transform 0.4s ease;
-      padding: 12px;
-      -webkit-user-drag: none;
-      pointer-events: none;
-    }
-
+    .producto .imagen-contenedor { position: relative; width: 100%; height: 0; padding-bottom: 100%; background: white; overflow: hidden; border-bottom: 1px solid var(--border); }
+    .producto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; padding: 16px; transition: transform 0.4s ease; }
+    @media (max-width: 480px) { .producto img { padding: 12px; } }
     .producto:hover img { transform: scale(1.08); }
 
-    .producto .contenido {
-      padding: 1rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      user-select: none;
-      -webkit-touch-callout: none;
-    }
+    .producto .contenido { padding: 1rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+    .producto h3 { font-size: 1rem; margin-bottom: 0.4rem; line-height: 1.3; }
+    .producto .descripcion { font-size: 0.84rem; color: #777; margin-bottom: 0.6rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; text-overflow: ellipsis; position: relative; padding-right: 55px; cursor: pointer; transition: all 0.3s ease; pointer-events: auto !important; }
+    .producto .descripcion::after { content: "Ver más"; position: absolute; right: 0; bottom: 0; background: white; padding-left: 8px; color: var(--primary); font-weight: 600; font-size: 0.8rem; pointer-events: none; }
+    .producto .descripcion.expandida { -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; padding-right: 0; margin-bottom: 1rem; }
+    .producto .descripcion.expandida::after { content: "Ver menos"; bottom: -22px; right: 0; font-size: 0.8rem; }
 
-    .producto h3,
-    .producto .descripcion,
-    .producto .precio {
-      pointer-events: none;
-      user-select: none;
-      -webkit-touch-callout: none;
-    }
+    .producto .precio { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin: 0.4rem 0; }
+    .producto button { width: 100%; padding: 0.85rem; background: var(--primary); color: white; border: none; border-radius: 12px; font-weight: 600; cursor: pointer; margin-top: auto; font-size: 0.95rem; }
 
-    .producto .precio {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 0.8rem;
-    }
+    #modal-producto { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.95); backdrop-filter: blur(12px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 1rem; overflow-y: auto; }
+    .modal-contenido { background: white; border-radius: 24px; max-width: 1000px; width: 100%; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.4); max-height: 95vh; overflow: hidden; display: flex; flex-direction: column; }
+    .cerrar-modal { position: absolute; top: 15px; right: 20px; background: rgba(0,0,0,0.5); color: white; border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 2rem; cursor: pointer; z-index: 10; }
+    .cerrar-modal:hover { background: var(--primary); transform: rotate(90deg); }
 
-    .producto button {
-      width: 100%;
-      padding: 0.75rem;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: 0 4px 12px rgba(244, 124, 32, 0.3);
-      pointer-events: auto;
-      user-select: auto;
-    }
+    .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem; flex: 1; overflow-y: auto; }
+    .carrusel { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 16px; background: #f9f9f9; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .img-modal { width: 100%; height: 100%; object-fit: contain; background: #f8f9fb; }
 
-    .producto button:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 168, 111, 0.4);
-    }
+    .carrusel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: white; border: none; width: 56px; height: 56px; border-radius: 50%; font-size: 2rem; cursor: pointer; z-index: 5; display: flex; align-items: center; justify-content: center; }
+    .carrusel-btn:hover { background: var(--primary); }
+    .prev { left: 16px; }
+    .next { right: 16px; }
 
-    .sin-resultados {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 3rem;
-      color: var(--text-light);
-      font-size: 1.1rem;
-    }
+    .miniaturas { display: flex; gap: 0.6rem; margin-top: 1rem; justify-content: center; flex-wrap: wrap; padding: 0 1rem; }
+    .miniaturas img { width: 60px; height: 60px; object-fit: cover; border-radius: 10px; cursor: pointer; border: 3px solid transparent; opacity: 0.7; transition: 0.3s; }
+    .miniaturas img.activa, .miniaturas img:hover { opacity: 1; border-color: var(--primary); transform: scale(1.1); }
 
-    /* ===== BOTONES FLOTANTES ===== */
-    #carrito-float, #whatsapp-contacto {
-      position: fixed;
-      z-index: 999;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      color: white;
-      text-decoration: none;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      transition: var(--transition);
-    }
+    .detalles-producto h2 { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem; color: var(--text-dark); }
+    .descripcion-modal { font-size: 0.95rem !important; color: var(--text-soft); line-height: 1.7; margin-bottom: 1rem; cursor: pointer; position: relative; padding-right: 30px; transition: all 0.4s ease; pointer-events: auto !important; }
+    .descripcion-modal.colapsada { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; text-overflow: ellipsis; }
+    .descripcion-modal::after { content: "Ver más"; position: absolute; right: 0; bottom: 0; background: white; padding-left: 10px; color: var(--primary); font-weight: 600; font-size: 0.92rem; pointer-events: none; }
+    .descripcion-modal.expandida::after { content: "Ver menos"; bottom: -4px; }
 
-    #carrito-float {
-      bottom: 90px;
-      right: 1rem;
-      background: var(--highlight);
-    }
+    .precio-modal { font-size: 2.1rem; font-weight: 700; color: var(--primary); margin: 1rem 0; }
+    .info-extra { margin-top: 1.5rem; color: #666; font-size: 0.95rem; line-height: 1.6; }
+    .modal-footer { padding: 1.5rem 2rem; background: white; border-top: 1px solid var(--border); text-align: center; }
+    .btn-agregar-modal { width: 100%; padding: 1.2rem; background: var(--primary); color: white; border: none; border-radius: 16px; font-size: 1.2rem; font-weight: 600; cursor: pointer; transition: var(--transition); }
+    .btn-agregar-modal:hover { background: var(--primary-dark); transform: translateY(-3px); }
 
-    #carrito-float:hover {
-      transform: scale(1.1);
-      background: #f5c02e;
-    }
+    #carrito-float, #whatsapp-contacto { position: fixed; z-index: 999; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; color: white; box-shadow: 0 8px 24px rgba(0,0,0,0.2); transition: var(--transition); }
+    #carrito-float { bottom: 90px; right: 1rem; background: var(--highlight); }
+    #carrito-float span { position: absolute; top: -8px; right: -8px; background: #e6a800; color: white; font-size: 0.8rem; font-weight: bold; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; animation: pulse 2s infinite; }
+    #whatsapp-contacto { bottom: 160px; right: 1rem; background: #25D366; }
 
-    #carrito-float span {
-      position: absolute;
-      top: -8px;
-      right: -8px;
-      background: #e6a800;
-      color: white;
-      font-size: 0.8rem;
-      font-weight: bold;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid white;
-      animation: pulse 2s infinite;
-    }
-
-    #whatsapp-contacto {
-      bottom: 160px;
-      right: 1rem;
-      background: #25D366;
-    }
-
-    #whatsapp-contacto:hover {
-      transform: scale(1.1);
-      background: #128C7E;
-    }
-
-    #whatsapp-contacto svg {
-      width: 36px;
-      height: 36px;
-    }
-
-    #boton-volver {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(255,255,255,0.9);
-      color: var(--text-dark);
-      padding: 0.7rem 1.4rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-      transition: var(--transition);
-      border: 1px solid var(--border);
-      z-index: 998;
-    }
-
-    #boton-volver:hover {
-      background: white;
-      transform: translateX(-50%) translateY(-4px);
-      border-color: var(--primary);
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      aside { width: 280px; left: -280px; }
-      main { padding: 1.5rem 0.5rem; }
-      #contenedor-productos {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 1rem;
-      }
-      #titulo-principal { font-size: 1.6rem; }
-    }
+    #boton-volver { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.95); color: var(--text-dark); padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: 600; font-size: 1rem; box-shadow: var(--shadow); backdrop-filter: blur(12px); border: 1px solid var(--border); z-index: 998; text-decoration: none; transition: var(--transition); display: flex; align-items: center; gap: 10px; }
+    #boton-volver i { font-size: 1.35rem; }
+    #boton-volver:hover { background: var(--primary); color: white; transform: translateX(-50%) translateY(-3px); }
 
     @media (max-width: 480px) {
-      #toggle-menu { width: 44px; height: 44px; font-size: 1.3rem; }
-      #contenedor-productos { grid-template-columns: 1fr; }
-      .boton-subcategoria { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+      main { padding: 1.5rem 0.8rem; padding-bottom: 140px; }
+      #contenedor-productos { grid-template-columns: 1fr; gap: 1.2rem; padding: 0 0.5rem; }
+      #carrito-float, #whatsapp-contacto { width: 56px; height: 56px; font-size: 1.6rem; }
+      #carrito-float { bottom: 100px; right: 14px; }
+      #whatsapp-contacto { bottom: 166px; right: 14px; }
+      #carrito-float span { width: 22px; height: 22px; font-size: 0.75rem; top: -6px; right: -6px; }
+      #boton-volver { left: auto !important; right: 14px !important; bottom: 20px !important; transform: none !important; padding: 0.75rem 1.3rem !important; font-size: 0.95rem !important; }
+      #boton-volver i { font-size: 1.3rem !important; }
+
+      .modal-contenido { margin: 0 auto; max-width: 96%; max-height: 88vh !important; border-radius: 20px; }
+      .modal-grid { grid-template-columns: 1fr !important; gap: 1rem; padding: 1rem 1rem 0.5rem !important; }
+      .carrusel { max-height: 340px; }
+      .miniaturas img { width: 52px; height: 52px; }
+      .detalles-producto h2 { font-size: 1.5rem !important; }
+      .descripcion-modal { font-size: 0.92rem !important; }
+      .precio-modal { font-size: 1.85rem !important; }
+      .info-extra { font-size: 0.88rem; margin-top: 0.8rem; }
+      .modal-footer { padding: 1rem 1.2rem !important; }
+      .btn-agregar-modal { padding: 1.1rem !important; font-size: 1.15rem !important; }
+      .carrusel-btn { width: 44px; height: 44px; font-size: 1.6rem; }
     }
 
-    .producto * {
-      -webkit-touch-callout: none;
-      user-select: none;
-    }
-
-    .producto button {
-      user-select: auto;
-      pointer-events: auto;
-    }
-
-    img {
-      -webkit-touch-callout: none;
-      -webkit-user-drag: none;
-      pointer-events: none;
-    }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
   </style>
 </head>
-<body>
+<body oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;">
 
-  <button id="toggle-menu" aria-label="Mostrar menú lateral">
-    <i class="bi bi-list"></i>
-  </button>
+  <button id="toggle-menu" aria-label="Mostrar menú"><i class="bi bi-list"></i></button>
 
   <div class="wrapper">
     <aside>
       <header>
-        <img src="img/GuateCocina_LogoConNombre.png" alt="Rompecabezas de Guatemala" class="logo" />
+        <img src="img/GuateCocina_LogoConNombre-PNGtoICO.png" alt="Logo" class="logo" />
       </header>
-
       <nav>
-        <input type="text" id="buscar-categoria" placeholder="Buscar categoría..." aria-label="Buscar categoría">
-        <ul id="menu-categorias" class="menu" role="navigation" aria-label="Categorías"></ul>
+        <input type="text" id="buscar-categoria" placeholder="Buscar categoría...">
+        <ul id="menu-categorias"></ul>
       </nav>
-
-
-      <!-- DATOS LEGALES DE LA EMPRESA -->
-      <!--
-      <div class="info-empresa">
-        <h4>Nuestra empresa</h4>
-        <p style="margin:0.3rem 0;">
-          <strong>Rompecabezas de Guatemala</strong><br>
-          NIT: 1659848-2<br>
-          Ciudad de Guatemala<br>
-          Teléfono: <a href="tel:+50241084481" style="color:var(--primary);">4108-4481</a>
-        </p>
-      </div>
-      -->
-      
-      <!-- EMPRESAS HERMANAS -->
-      <!--
-      <div class="empresas-hermanas">
-        <h4>Empresas hermanas</h4>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:10px;">
-          <a href="https://vmef1980.github.io/guatecocina/" target="_blank" title="GuateCocina">
-            <img src="img/GuateCocina_LogoConNombre-PNGtoICO.png" alt="GuateCocina">
-          </a>
-          <a href="https://vmef1980.github.io/viiajo/" target="_blank" title="Puzzle Solutions">
-            <img src="img/Viiajo_LogoConNombre.png" alt="Puzzle Solutions">
-          </a>
-        </div>
-      </div>
-      -->
-
-      <!-- FOOTER PROFESIONAL -->
       <footer>
-        <p style="margin:0.3rem 0;font-size: 0.6rem;">© 2025
-          <strong>Rompecabezas de Guatemala</strong><!-- • Todos los derechos reservados -->
+        <p style="margin:0.3rem 0; font-size:0.6rem;">© 2025 <strong>Rompecabezas de Guatemala</strong></p>
+        <p style="margin:0.3rem 0; font-size:0.6rem;">
+          Desarrollado por <strong>Rompecabezas de Guatemala</strong>
+          <a href="https://wa.me/50241084481" target="_blank" style="color:var(--primary); font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+            <i class="bi bi-whatsapp" style="font-size:0.85rem;"></i>
+          </a>
         </p>
-        <p style="margin:0.3rem 0;font-size: 0.6rem;">
-          Sitio web desarrollado por <a href="tel:+50241084481">Puzzle Solutions</a>
-        </p>
-        <div style="margin-top:0.8rem;font-size:0.8rem;color:#777;">
-      <!--<a href="politica-privacidad.html">Política de privacidad</a> •  -->
-      <!--<a href="terminos-condiciones.html">Términos y condiciones</a> • --> 
-      <!--<a href="devoluciones.html">Devoluciones</a>                     -->
-        </div>
       </footer>
-
-      <button id="cerrar-menu" aria-label="Ocultar menú lateral">
-        <i class="bi bi-x-lg"></i>
-      </button>
+      <button id="cerrar-menu" aria-label="Cerrar menú"><i class="bi bi-x-lg"></i></button>
     </aside>
 
     <main>
       <h2 id="titulo-principal">Todos los productos</h2>
-      <section id="subcategorias" class="subcategorias" aria-label="Subcategorías"></section>
-      <section id="contenedor-productos" class="contenedor-productos" aria-label="Listado de productos"></section>
+      <section id="subcategorias"></section>
+      <section id="contenedor-productos"></section>
     </main>
   </div>
 
-  <!-- BOTONES FLOTANTES -->
-  <a href="carrito.html" id="carrito-float" title="Ver carrito">
+  <a href="carrito.html" id="carrito-float">
     <i class="bi bi-cart3"></i>
     <span id="contador-carrito">0</span>
   </a>
 
-  <a href="https://wa.me/50241084481?text=¡Hola!%20Quiero%20más%20info%20sobre%20sus%20productos" 
-   id="whatsapp-contacto" 
-   target="_blank" 
-   title="Chatear por WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:38px;height:38px;">
+  <a href="https://wa.me/50241084481" id="whatsapp-contacto" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:38px;height:38px;">
   </a>
 
-  <a href="https://vmef1980.github.io/rompecabezas/index.html" id="boton-volver" title="Volver atrás">
-    Volver
+  <a href="../index.html" id="boton-volver">
+    <i class="bi bi-house-door-fill"></i> Volver al inicio
   </a>
 
-  <!-- TU SCRIPT ORIGINAL 100% SIN CAMBIOS -->
+  <div id="modal-producto">
+    <div class="modal-contenido">
+      <button class="cerrar-modal" id="cerrar-modal">×</button>
+      
+      <div class="modal-grid">
+        <div class="carrusel-container">
+          <button class="carrusel-btn prev" id="prev-img"><i class="bi bi-chevron-left"></i></button>
+          <button class="carrusel-btn next" id="next-img"><i class="bi bi-chevron-right"></i></button>
+          <div class="carrusel"><img id="img-principal-modal" src="" alt="" class="img-modal"></div>
+          <div class="miniaturas" id="miniaturas"></div>
+        </div>
+
+        <div class="detalles-producto">
+          <h2 id="modal-titulo"></h2>
+          <p id="modal-descripcion" class="descripcion-modal colapsada"></p>
+          <div class="precio-modal" id="modal-precio"></div>
+          
+          <div class="info-extra">
+            <p><strong>Categoría:</strong> <span id="modal-categoria"></span></p>
+            <p id="linea-codigo" style="display:none;"><strong>Código:</strong> <span id="modal-id"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-agregar-modal" id="btn-agregar-modal">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
   <script type="module">
     import { productos } from "./js/productos.js";
+
+    // ←←← AQUÍ DECIDES SI SE MUESTRA O NO EL CÓDIGO DEL PRODUCTO
+    const mostrarCodigoProducto = false;  // Cambia a true para activarlo
 
     const menu = document.querySelector("#menu-categorias");
     const subcategorias = document.querySelector("#subcategorias");
@@ -598,84 +262,59 @@
     const cerrarMenu = document.getElementById("cerrar-menu");
     const aside = document.querySelector("aside");
     const contadorCarrito = document.getElementById("contador-carrito");
-    const buscador = document.getElementById("buscar-categoria");
+    const modal = document.getElementById("modal-producto");
+    const descripcionModal = document.getElementById("modal-descripcion");
+    const btnAgregarModal = document.getElementById("btn-agregar-modal");
+    const lineaCodigo = document.getElementById("linea-codigo");
+    const urlLimpia = location.pathname;
 
-    if (localStorage.getItem("menuAbierto") === "true") {
-      aside.classList.add("abierto");
-    }
+    let productoActual = null;
+    let indiceActual = 0;
 
-    toggleMenu.addEventListener("click", () => {
-      aside.classList.add("abierto");
-      localStorage.setItem("menuAbierto", "true");
-    });
+    // Control del menú lateral
+    if (localStorage.getItem("menuAbierto") === "true") aside.classList.add("abierto");
+    toggleMenu.onclick = () => { aside.classList.add("abierto"); localStorage.setItem("menuAbierto", "true"); };
+    cerrarMenu.onclick = () => { aside.classList.remove("abierto"); localStorage.setItem("menuAbierto", "false"); };
 
-    cerrarMenu.addEventListener("click", () => {
-      aside.classList.remove("abierto");
-      localStorage.setItem("menuAbierto", "false");
-    });
-
-    buscador?.addEventListener("input", function(e) {
-      const texto = e.target.value.toLowerCase().trim();
+    // Búsqueda de categorías
+    document.getElementById("buscar-categoria")?.addEventListener("input", e => {
+      const texto = e.target.value.toLowerCase();
       document.querySelectorAll(".boton-categoria").forEach(btn => {
-        const nombre = btn.textContent.toLowerCase();
-        btn.style.display = nombre.includes(texto) ? "block" : "none";
+        btn.style.display = btn.textContent.toLowerCase().includes(texto) ? "block" : "none";
       });
     });
 
+    // Carga de categorías y productos (igual que antes)
     const categorias = [...new Set(productos.map(p => p.categoria.id))];
-
     categorias.forEach(cat => {
       const btn = document.createElement("button");
       btn.className = "boton-categoria";
       btn.textContent = cat.replace(/_/g, " ");
-      btn.setAttribute("aria-label", `Filtrar por ${btn.textContent}`);
-      btn.onclick = () => mostrarCategoria(cat);
+      btn.onclick = () => {
+        titulo.textContent = cat.replace(/_/g, " ");
+        cargarProductos(productos.filter(p => p.categoria.id === cat));
+        mostrarSubcategorias(cat);
+        aside.classList.remove("abierto");
+      };
       menu.appendChild(btn);
     });
 
-    function mostrarCategoria(catId) {
-      const nombre = catId.replace(/_/g, " ");
-      titulo.textContent = nombre;
-      const filtrados = productos.filter(p => p.categoria.id === catId);
-      cargarProductos(filtrados);
-      mostrarSubcategorias(catId);
-      window.scrollTo({ top: titulo.offsetTop - 100, behavior: "smooth" });
-      aside.classList.remove("abierto");
-      localStorage.setItem("menuAbierto", "false");
-    }
-
     function mostrarSubcategorias(catId) {
-      const subs = [...new Set(productos
-        .filter(p => p.categoria.id === catId && p.subcategoria)
-        .map(p => p.subcategoria.id))];
-
+      const subs = [...new Set(productos.filter(p => p.categoria.id === catId && p.subcategoria).map(p => p.subcategoria.id))];
       subcategorias.innerHTML = "";
-      if (subs.length === 0) return;
+      if (!subs.length) return;
 
       const btnTodos = document.createElement("button");
       btnTodos.className = "boton-subcategoria activo";
       btnTodos.textContent = "Todos";
-      btnTodos.onclick = () => {
-        titulo.textContent = catId.replace(/_/g, " ");
-        cargarProductos(productos.filter(p => p.categoria.id === catId));
-        document.querySelectorAll('.boton-subcategoria').forEach(b => b.classList.remove('activo'));
-        btnTodos.classList.add('activo');
-      };
+      btnTodos.onclick = () => cargarProductos(productos.filter(p => p.categoria.id === catId));
       subcategorias.appendChild(btnTodos);
 
-      subs.forEach(subId => {
+      subs.forEach(sub => {
         const btn = document.createElement("button");
         btn.className = "boton-subcategoria";
-        btn.textContent = subId.replace(/_/g, " ");
-        btn.onclick = () => {
-          const filtrados = productos.filter(p =>
-            p.categoria.id === catId && p.subcategoria?.id === subId
-          );
-          titulo.textContent = btn.textContent;
-          cargarProductos(filtrados);
-          document.querySelectorAll('.boton-subcategoria').forEach(b => b.classList.remove('activo'));
-          btn.classList.add('activo');
-        };
+        btn.textContent = sub.replace(/_/g, " ");
+        btn.onclick = () => cargarProductos(productos.filter(p => p.categoria.id === catId && p.subcategoria?.id === sub));
         subcategorias.appendChild(btn);
       });
     }
@@ -683,7 +322,7 @@
     function cargarProductos(lista) {
       contenedor.innerHTML = "";
       if (!lista.length) {
-        contenedor.innerHTML = `<div class="sin-resultados"><p>No hay productos disponibles.</p></div>`;
+        contenedor.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:#666;"><p>No hay productos disponibles.</p></div>`;
         return;
       }
 
@@ -692,54 +331,118 @@
         div.className = "producto";
         div.innerHTML = `
           <div class="imagen-contenedor">
-            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo}" loading="lazy" />
+            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo}" loading="lazy">
           </div>
           <div class="contenido">
             <h3>${p.titulo}</h3>
-            <p class="descripcion">${p.descripcion}</p>
+            <p class="descripcion">${p.descripcion || "Sin descripción"}</p>
             <p class="precio">Q${p.precio.toFixed(2)}</p>
             <button class="agregar-carrito" data-id="${p.id}">Agregar</button>
           </div>
         `;
         contenedor.appendChild(div);
       });
+
+      document.querySelectorAll(".producto .descripcion").forEach(desc => {
+        desc.onclick = e => { e.stopPropagation(); desc.classList.toggle("expandida"); };
+      });
+
+      document.querySelectorAll(".agregar-carrito").forEach(btn => {
+        btn.onclick = e => {
+          e.stopPropagation();
+          const id = btn.dataset.id;
+          const producto = productos.find(p => p.id === id);
+          if (producto) {
+            const carrito = JSON.parse(localStorage.getItem("carrito") || "[]");
+            carrito.push(producto);
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            contadorCarrito.textContent = carrito.length;
+            btn.textContent = "Agregado";
+            btn.style.background = "#00A86F";
+            setTimeout(() => { btn.textContent = "Agregar"; btn.style.background = ""; }, 1500);
+          }
+        };
+      });
     }
 
+    // Apertura del modal
     document.addEventListener("click", e => {
-      if (e.target.classList.contains("agregar-carrito")) {
-        const id = e.target.dataset.id;
-        const producto = productos.find(p => p.id === id);
-        if (producto) {
-          const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-          carrito.push(producto);
-          localStorage.setItem("carrito", JSON.stringify(carrito));
-          contadorCarrito.textContent = carrito.length;
-          contadorCarrito.style.animation = "pulse 0.6s ease";
-          setTimeout(() => contadorCarrito.style.animation = "", 600);
-        }
+      const card = e.target.closest(".producto");
+      if (!card) return;
+      if (e.target.closest(".descripcion") || e.target.closest(".agregar-carrito")) return;
+
+      const id = card.querySelector(".agregar-carrito")?.dataset.id;
+      productoActual = productos.find(p => p.id === id);
+      if (!productoActual) return;
+
+      document.getElementById("modal-titulo").textContent = productoActual.titulo;
+      document.getElementById("modal-descripcion").textContent = productoActual.descripcion || "Sin descripción.";
+      document.getElementById("modal-precio").textContent = `Q${productoActual.precio.toFixed(2)}`;
+      document.getElementById("modal-categoria").textContent = productoActual.categoria.id.replace(/_/g, " ");
+
+      // CONTROL DEL CÓDIGO
+      if (mostrarCodigoProducto) {
+        document.getElementById("modal-id").textContent = productoActual.id;
+        lineaCodigo.style.display = "block";
+      } else {
+        lineaCodigo.style.display = "none";
       }
+
+      descripcionModal.classList.add("colapsada");
+      descripcionModal.classList.remove("expandida");
+
+      const imagenes = Array.isArray(productoActual.imagenes) ? productoActual.imagenes : [productoActual.imagen || "img/placeholder.png"];
+      indiceActual = 0;
+      document.getElementById("img-principal-modal").src = imagenes[0];
+      generarMiniaturas(imagenes);
+
+      btnAgregarModal.onclick = () => {
+        const carrito = JSON.parse(localStorage.getItem("carrito") || "[]");
+        carrito.push(productoActual);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        contadorCarrito.textContent = carrito.length;
+        btnAgregarModal.textContent = "¡Agregado!";
+        btnAgregarModal.style.background = "#00A86F";
+        setTimeout(() => {
+          btnAgregarModal.textContent = "Agregar al carrito";
+          btnAgregarModal.style.background = "";
+        }, 1500);
+      };
+
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+      history.pushState({ modalAbierto: true }, '', '#producto');
     });
+
+    function generarMiniaturas(arr) {
+      const container = document.getElementById("miniaturas");
+      container.innerHTML = "";
+      arr.forEach((src, i) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.onclick = e => {
+          e.stopPropagation();
+          indiceActual = i;
+          document.getElementById("img-principal-modal").src = src;
+          document.querySelectorAll(".miniaturas img").forEach(img => img.classList.remove("activa"));
+          img.classList.add("activa");
+        };
+        if (i === 0) img.classList.add("activa");
+        container.appendChild(img);
+      });
+    }
+
+    document.getElementById("prev-img").onclick = e => { e.stopPropagation(); const imgs = Array.isArray(productoActual.imagenes) ? productoActual.imagenes : [productoActual.imagen]; indiceActual = (indiceActual - 1 + imgs.length) % imgs.length; document.getElementById("img-principal-modal").src = imgs[indiceActual]; };
+    document.getElementById("next-img").onclick = e => { e.stopPropagation(); const imgs = Array.isArray(productoActual.imagenes) ? productoActual.imagenes : [productoActual.imagen]; indiceActual = (indiceActual + 1) % imgs.length; document.getElementById("img-principal-modal").src = imgs[indiceActual]; };
+
+    window.addEventListener('popstate', () => { if (modal.style.display === "flex") { modal.style.display = "none"; document.body.style.overflow = ""; history.replaceState({}, '', urlLimpia); } });
+    document.getElementById("cerrar-modal").onclick = () => { modal.style.display = "none"; document.body.style.overflow = ""; history.replaceState({}, '', urlLimpia); };
+    modal.onclick = e => { if (e.target === modal) { modal.style.display = "none"; document.body.style.overflow = ""; history.replaceState({}, '', urlLimpia); } };
+
+    descripcionModal.onclick = e => { e.stopPropagation(); descripcionModal.classList.toggle("colapsada"); descripcionModal.classList.toggle("expandida"); };
 
     cargarProductos(productos);
-    contadorCarrito.textContent = (JSON.parse(localStorage.getItem("carrito")) || []).length;
-
-    document.addEventListener('contextmenu', e => {
-      if (e.target.closest('.producto')) {
-        e.preventDefault();
-      }
-    });
-
-    document.addEventListener('dragstart', e => {
-      if (e.target.tagName === 'IMG') {
-        e.preventDefault();
-      }
-    });
-
-    document.addEventListener('selectstart', e => {
-      if (e.target.closest('.producto')) {
-        e.preventDefault();
-      }
-    });
+    contadorCarrito.textContent = (JSON.parse(localStorage.getItem("carrito") || "[]")).length;
   </script>
 </body>
 </html>
