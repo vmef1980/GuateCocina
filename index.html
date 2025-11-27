@@ -7,11 +7,11 @@
   <meta name="theme-color" content="#F47C20" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <!-- SEO COPIADO Y ADAPTADO DE KOSSINO.COM (optimizado para Guatemala) -->
-  <title> 🛒GuateCocina | Equipo de Cocina Profesional | Utensilios para Restaurantes y Hoteles en Guatemala</title>
+  <!-- SEO -->
+  <title> GuateCocina | Equipo de Cocina Profesional | Utensilios para Restaurantes y Hoteles en Guatemala</title>
   <meta name="description" content="Descubre utensilios y equipo de cocina profesional para restaurantes, hoteles, banquetes, bar, café y té, insertos, desechables y consumibles. Calidad, precios directos de fábrica y envíos a todo Guatemala en GuateCocina.">
 
-  <!-- Open Graph (adaptado de Kossino: simple y efectivo para shares) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="GuateCocina | Equipo de Cocina Profesional en Guatemala">
   <meta property="og:description" content="Utensilios industriales para restaurantes y hoteles. Envíos a todo el país.">
   <meta property="og:image" content="https://guatecocina.rompecabezas.online/img/og-image.jpg">
@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_GT">
 
-  <!-- Twitter Cards (similar a Kossino) -->
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GuateCocina | Utensilios Profesionales Guatemala">
   <meta name="twitter:description" content="Equipo para cocina industrial al mejor precio.">
@@ -31,7 +31,7 @@
   <link rel="icon" href="img/GuateCocina.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/GuateCocina.ico">
 
-  <!-- Schema.org (mejorado vs. Kossino – agregué más detalles locales) -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,7 +40,7 @@
     "image": "https://guatecocina.rompecabezas.online/img/GuateCocina_LogoConNombre-PNGtoICO.png",
     "telephone": "+50241084481",
     "url": "https://guatecocina.rompecabezas.online",
-    "description": "Equipo de cocina profesional para restaurantes, hoteles y banquetes en Guatemala. Utensilios industriales de calidad.",
+    "description": "Equipo de cocina profesional para restaurantes, hoteles y banquetes en Guatemala.",
     "address": {"@type": "PostalAddress", "addressCountry": "GT", "addressRegion": "Guatemala"},
     "priceRange": "Q",
     "openingHours": "Mo-Su 08:00-18:00",
@@ -145,7 +145,6 @@
 
     .producto .imagen-contenedor { position: relative; width: 100%; height: 0; padding-bottom: 100%; background: white; overflow: hidden; border-bottom: 1px solid var(--border); }
     .producto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; padding: 16px; transition: transform 0.4s ease; }
-    @media (max-width: 480px) { .producto img { padding: 12px; } }
     .producto:hover img { transform: scale(1.08); }
 
     .producto .contenido { padding: 1rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
@@ -231,7 +230,8 @@
         <img src="img/GuateCocina_LogoConNombre-PNGtoICO.png" alt="Logo GuateCocina" class="logo" />
       </header>
       <nav>
-        <input type="text" id="buscar-categoria" placeholder="Buscar categoría...">
+        <!-- CAMBIO: Ahora dice "Busca producto..." y busca en tiempo real -->
+        <input type="text" id="buscar-categoria" placeholder="Busca producto...">
         <ul id="menu-categorias"></ul>
       </nav>
       <footer>
@@ -247,10 +247,9 @@
     </aside>
 
     <main>
-      <h1 id="titulo-principal">GuateCocina – Equipo de Cocina Profesional</h1>
+      <h1 id="titulo-principal">🛒 GuateCocina – Equipo de Cocina Profesional</h1>
       <p class="subtitle-seo">
-        Banquetes, Bar, Café y Té, Insertos, Desechables y Consumibles<br>
-        Precios directos de fábrica • Envíos a toda Guatemala • Pago contra entrega
+        Utensilios y equipo de cocina profesional para restaurantes, hoteles, banquetes, bar, cafeterias • Precios directos de fábrica • Envíos a toda Guatemala • Pago contra entrega
       </p>
 
       <section id="subcategorias"></section>
@@ -304,8 +303,7 @@
   <script type="module">
     import { productos } from "./js/productos.js";
 
-    // ←←← AQUÍ DECIDES SI SE MUESTRA O NO EL CÓDIGO DEL PRODUCTO
-    const mostrarCodigoProducto = false;  // Cambia a true para activarlo
+    const mostrarCodigoProducto = false;
 
     const menu = document.querySelector("#menu-categorias");
     const subcategorias = document.querySelector("#subcategorias");
@@ -324,26 +322,36 @@
     let productoActual = null;
     let indiceActual = 0;
 
-    // Control del menú lateral (ARREGLADO: z-index y height fijos)
+    // Menú lateral
     if (localStorage.getItem("menuAbierto") === "true") aside.classList.add("abierto");
-    toggleMenu.onclick = () => { 
-      aside.classList.add("abierto"); 
-      localStorage.setItem("menuAbierto", "true"); 
-    };
-    cerrarMenu.onclick = () => { 
-      aside.classList.remove("abierto"); 
-      localStorage.setItem("menuAbierto", "false"); 
-    };
+    toggleMenu.onclick = () => { aside.classList.add("abierto"); localStorage.setItem("menuAbierto", "true"); };
+    cerrarMenu.onclick = () => { aside.classList.remove("abierto"); localStorage.setItem("menuAbierto", "false"); };
 
-    // Búsqueda de categorías
-    document.getElementById("buscar-categoria")?.addEventListener("input", e => {
-      const texto = e.target.value.toLowerCase();
-      document.querySelectorAll(".boton-categoria").forEach(btn => {
-        btn.style.display = btn.textContent.toLowerCase().includes(texto) ? "block" : "none";
-      });
+    // BÚSQUEDA GLOBAL EN TIEMPO REAL
+    document.getElementById("buscar-categoria").addEventListener("input", e => {
+      const texto = e.target.value.toLowerCase().trim();
+      
+      if (texto === "") {
+        titulo.textContent = "GuateCocina – Equipo de Cocina Profesional";
+        subcategorias.innerHTML = "";
+        cargarProductos(productos);
+        return;
+      }
+
+      const resultados = productos.filter(p => 
+        p.titulo.toLowerCase().includes(texto) ||
+        (p.descripcion && p.descripcion.toLowerCase().includes(texto))
+      );
+
+      titulo.textContent = resultados.length > 0 
+        ? `Resultados para: "${e.target.value}" (${resultados.length})`
+        : `No se encontraron productos para: "${e.target.value}"`;
+
+      cargarProductos(resultados);
+      subcategorias.innerHTML = "";
     });
 
-    // Carga de categorías y productos
+    // Menú de categorías
     const categorias = [...new Set(productos.map(p => p.categoria.id))];
     categorias.forEach(cat => {
       const btn = document.createElement("button");
@@ -354,6 +362,7 @@
         cargarProductos(productos.filter(p => p.categoria.id === cat));
         mostrarSubcategorias(cat);
         aside.classList.remove("abierto");
+        document.getElementById("buscar-categoria").value = "";
       };
       menu.appendChild(btn);
     });
@@ -366,14 +375,22 @@
       const btnTodos = document.createElement("button");
       btnTodos.className = "boton-subcategoria activo";
       btnTodos.textContent = "Todos";
-      btnTodos.onclick = () => cargarProductos(productos.filter(p => p.categoria.id === catId));
+      btnTodos.onclick = () => {
+        document.querySelectorAll(".boton-subcategoria").forEach(b => b.classList.remove("activo"));
+        btnTodos.classList.add("activo");
+        cargarProductos(productos.filter(p => p.categoria.id === catId));
+      };
       subcategorias.appendChild(btnTodos);
 
       subs.forEach(sub => {
         const btn = document.createElement("button");
         btn.className = "boton-subcategoria";
         btn.textContent = sub.replace(/_/g, " ");
-        btn.onclick = () => cargarProductos(productos.filter(p => p.categoria.id === catId && p.subcategoria?.id === sub));
+        btn.onclick = () => {
+          document.querySelectorAll(".boton-subcategoria").forEach(b => b.classList.remove("activo"));
+          btn.classList.add("activo");
+          cargarProductos(productos.filter(p => p.categoria.id === catId && p.subcategoria?.id === sub));
+        };
         subcategorias.appendChild(btn);
       });
     }
@@ -390,7 +407,7 @@
         div.className = "producto";
         div.innerHTML = `
           <div class="imagen-contenedor">
-            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo} - GuateCocina Guatemala" loading="lazy">
+            <img src="${p.imagen || 'img/placeholder.png'}" alt="${p.titulo}" loading="lazy">
           </div>
           <div class="contenido">
             <h3>${p.titulo}</h3>
@@ -424,11 +441,10 @@
       });
     }
 
-    // Apertura del modal
+    // Modal y resto del código sin cambios
     document.addEventListener("click", e => {
       const card = e.target.closest(".producto");
-      if (!card) return;
-      if (e.target.closest(".descripcion") || e.target.closest(".agregar-carrito")) return;
+      if (!card || e.target.closest(".descripcion") || e.target.closest(".agregar-carrito")) return;
 
       const id = card.querySelector(".agregar-carrito")?.dataset.id;
       productoActual = productos.find(p => p.id === id);
@@ -439,7 +455,6 @@
       document.getElementById("modal-precio").textContent = `Q${productoActual.precio.toFixed(2)}`;
       document.getElementById("modal-categoria").textContent = productoActual.categoria.id.replace(/_/g, " ");
 
-      // CONTROL DEL CÓDIGO
       if (mostrarCodigoProducto) {
         document.getElementById("modal-id").textContent = productoActual.id;
         lineaCodigo.style.display = "block";
